@@ -1,0 +1,9 @@
+node_modules
+.env
+.env.*
+!.env.example
+uploads/
+*.log
+
+# payment screenshots (private customer data)
+private_uploads/

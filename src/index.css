@@ -1,0 +1,3609 @@
+:root {
+  --blue: #004aad;
+  --royal-blue: #0b5ed7;
+  --deep-blue: #001f4d;
+  --navy: #061634;
+  --midnight: #020817;
+  --gold: #d4af37;
+  --dark-gold: #b8860b;
+  --soft-gold: #fff3c4;
+  --white: #ffffff;
+  --cream: #fffaf0;
+  --soft-bg: #f6f8ff;
+  --dark: #111827;
+  --gray: #667085;
+  --muted: #98a2b3;
+  --danger: #dc2626;
+  --success: #16a34a;
+  --shadow: 0 24px 70px rgba(0, 31, 77, 0.12);
+  --gold-shadow: 0 20px 50px rgba(212, 175, 55, 0.18);
+}
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 8%, rgba(212, 175, 55, 0.10), transparent 28%),
+    radial-gradient(circle at 92% 14%, rgba(0, 74, 173, 0.09), transparent 30%),
+    linear-gradient(135deg, #f6f8ff 0%, #ffffff 45%, #f9fbff 100%);
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: 1px solid rgba(0, 74, 173, 0.14);
+  border-radius: 16px;
+  background: #ffffff;
+  color: var(--deep-blue);
+  font-size: 15px;
+  font-weight: 650;
+  outline: none;
+  transition: 0.28s ease;
+  box-shadow: 0 10px 24px rgba(0, 31, 77, 0.04);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.16);
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.hero-buttons a,
+.hero-buttons button {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 25px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 1000;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.35s ease;
+}
+
+.btn,
+.btn-primary,
+.hero-buttons a:first-child {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.35), transparent 30%),
+    linear-gradient(135deg, #fff8df, var(--gold), var(--dark-gold));
+  color: var(--deep-blue);
+  box-shadow:
+    0 18px 38px rgba(212, 175, 55, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.60);
+}
+
+.btn:hover,
+.btn-primary:hover,
+.hero-buttons a:hover,
+.hero-buttons button:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 26px 55px rgba(0, 31, 77, 0.24),
+    0 0 42px rgba(212, 175, 55, 0.18);
+}
+
+.btn-secondary,
+.hero-buttons a:last-child,
+.hero-buttons button:last-child {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.34);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #991b1b);
+  color: #ffffff;
+}
+
+/* =========================================================
+   NAVBAR — FLAGSHIP FLOATING CORPORATE LOOK
+   ========================================================= */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background:
+    linear-gradient(90deg, rgba(212, 175, 55, 0.16), transparent 20%, transparent 80%, rgba(212, 175, 55, 0.14)),
+    radial-gradient(circle at 8% 20%, rgba(212, 175, 55, 0.12), transparent 28%),
+    linear-gradient(135deg, #061634 0%, #001f4d 48%, #062c4f 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.42);
+  box-shadow: 0 18px 48px rgba(0, 31, 77, 0.28);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: min(82%, 1100px);
+  height: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, #d4af37, #fff7d6, #d4af37, transparent);
+  pointer-events: none;
+}
+
+.nav-inner {
+  max-width: 1420px;
+  margin: auto;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+  padding: 8px 16px 8px 8px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.20), transparent 35%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.045));
+  border: 1px solid rgba(212, 175, 55, 0.32);
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.13);
+  transition: 0.35s ease;
+}
+
+.nav-brand:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 26px 62px rgba(0, 0, 0, 0.24);
+}
+
+.nav-logo {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  border-radius: 22px;
+  padding: 5px;
+  background: linear-gradient(135deg, #ffffff, #fff7d6);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.18),
+    0 0 0 6px rgba(212, 175, 55, 0.08);
+}
+
+.nav-brand-text {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.03;
+}
+
+.nav-brand-title {
+  width: 100%;
+  position: relative;
+  display: block;
+  font-size: 23px;
+  font-weight: 1000;
+  color: #ffffff;
+  letter-spacing: 0.35px;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.38);
+}
+
+.nav-brand-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  width: 72%;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.95), transparent);
+}
+
+.nav-brand-title .gold,
+.nav-brand-title span {
+  background: linear-gradient(135deg, #fff8d9, #d4af37 42%, #b8860b 74%, #fffdf0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-brand-subtitle {
+  width: fit-content;
+  margin: 13px auto 0;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.14);
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  color: var(--soft-gold);
+  font-size: 9px;
+  font-weight: 1000;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-brand-subtitle::before,
+.nav-brand-subtitle::after {
+  content: "✦";
+  color: var(--gold);
+  font-size: 8px;
+  margin: 0 6px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  padding: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.nav-links a,
+.nav-links .btn,
+.nav-logout {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.055);
+  transition: 0.35s ease;
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+.nav-links a:hover,
+.nav-links .btn:hover,
+.nav-logout:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--royal-blue), var(--deep-blue));
+  color: #ffffff;
+  border-color: rgba(212, 175, 55, 0.30);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.20);
+}
+
+.nav-links a[href="/cart"] {
+  background: linear-gradient(135deg, #fff8df, var(--gold), var(--dark-gold));
+  color: var(--deep-blue) !important;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  box-shadow: 0 12px 26px rgba(212, 175, 55, 0.26);
+}
+
+.nav-links a[href="/login"],
+.nav-links a[href="/signup"] {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--soft-gold) !important;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+.nav-links a[href="/admin"],
+.nav-links a[href="/cashier"],
+.nav-links a[href="/customer"] {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--soft-gold) !important;
+  border: 1px solid rgba(212, 175, 55, 0.20);
+}
+
+.nav-links .btn-danger,
+.nav-logout {
+  background: linear-gradient(135deg, #ef4444, #991b1b) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  box-shadow: 0 12px 28px rgba(153, 27, 27, 0.34) !important;
+}
+
+.nav-links .btn-danger:hover,
+.nav-logout:hover {
+  background: linear-gradient(135deg, #f87171, #b91c1c) !important;
+}
+
+.nav-menu-btn {
+  display: none;
+  padding: 11px 15px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff8df, var(--gold), var(--dark-gold));
+  color: var(--deep-blue);
+  font-weight: 1000;
+  font-size: 20px;
+  box-shadow: 0 12px 28px rgba(212, 175, 55, 0.25);
+}
+
+/* =========================================================
+   HOME HERO — FLAGSHIP LANDING EXPERIENCE
+   ========================================================= */
+
+.home-hero {
+  min-height: 94vh;
+  border-radius: 0 0 80px 80px;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 105px 24px 90px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(115deg, rgba(0, 31, 77, 0.40) 0%, rgba(0, 31, 77, 0.28) 52%, rgba(0, 74, 173, 0.16) 100%),
+    radial-gradient(circle at 12% 18%, rgba(212, 175, 55, 0.26), transparent 25%),
+    radial-gradient(circle at 86% 12%, rgba(255, 255, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 78% 86%, rgba(0, 74, 173, 0.18), transparent 34%) !important;
+  pointer-events: none;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  right: -250px;
+  bottom: -260px;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 175, 55, 0.38);
+  box-shadow:
+    0 0 0 50px rgba(255, 255, 255, 0.030),
+    0 0 0 112px rgba(212, 175, 55, 0.055),
+    0 0 120px rgba(212, 175, 55, 0.16);
+  z-index: 1;
+}
+
+.home-content {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: clamp(34px, 5vw, 64px);
+  border-radius: 44px;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(5, 20, 48, 0.38), rgba(255, 255, 255, 0.09));
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow:
+    0 38px 95px rgba(0, 0, 0, 0.26),
+    0 0 70px rgba(212, 175, 55, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.home-content::before {
+  content: "Where Vision Becomes Legacy";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 26px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.16);
+  border: 1px solid rgba(212, 175, 55, 0.62);
+  color: var(--soft-gold);
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.home-content h1 {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.98;
+  font-weight: 1000;
+  letter-spacing: -2.4px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow: 0 20px 50px rgba(0, 0, 0, 0.52);
+}
+
+.home-content h1 .gold {
+  background: linear-gradient(135deg, #fff7d6, #d4af37, #b8860b, #fff8d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home-content h2 {
+  width: fit-content;
+  margin: 26px auto 0;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: rgba(255, 243, 196, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  color: var(--soft-gold);
+  font-size: clamp(13px, 1.4vw, 17px);
+  font-weight: 1000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.home-content p {
+  max-width: 820px;
+  margin: 26px auto 0;
+  color: rgba(255, 255, 255, 0.97);
+  font-size: 18px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 38px;
+}
+
+/* =========================================================
+   SECTION HEADERS — PREMIUM SHOWCASE STYLE
+   ========================================================= */
+
+.section-title,
+.logo-text {
+  position: relative;
+  width: fit-content;
+  margin: 36px auto 28px;
+  padding: 0 0 16px;
+  color: var(--deep-blue);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 1000;
+  text-align: center;
+  letter-spacing: -0.6px;
+}
+
+.section-title::before,
+.logo-text::before {
+  content: "✦ PREMIUM COLLECTION ✦";
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+
+.section-title::after,
+.logo-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 150px;
+  height: 4px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--blue), var(--gold), transparent);
+}
+
+/* =========================================================
+   EXTREME PREMIUM CARDS
+   ========================================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 26px;
+}
+
+.card,
+.product-card,
+.category-card,
+.stat-card,
+.admin-stats .card,
+.action-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px !important;
+  background:
+    radial-gradient(circle at 92% 0%, rgba(212, 175, 55, 0.16), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(0, 74, 173, 0.08), transparent 36%),
+    linear-gradient(145deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  box-shadow:
+    0 26px 62px rgba(0, 31, 77, 0.13),
+    0 0 52px rgba(212, 175, 55, 0.08) !important;
+  transition: 0.42s ease;
+}
+
+.card::before,
+.product-card::before,
+.category-card::before,
+.stat-card::before,
+.admin-stats .card::before,
+.action-card::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 0;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold), var(--gold));
+  z-index: 3;
+}
+
+.card::after,
+.product-card::after,
+.category-card::after,
+.stat-card::after,
+.admin-stats .card::after,
+.action-card::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: -86px;
+  top: -86px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.18), transparent 70%);
+  pointer-events: none;
+}
+
+.card:hover,
+.product-card:hover,
+.category-card:hover,
+.stat-card:hover,
+.admin-stats .card:hover,
+.action-card:hover {
+  transform: translateY(-11px);
+  border-color: rgba(212, 175, 55, 0.42) !important;
+  box-shadow:
+    0 40px 90px rgba(0, 31, 77, 0.20),
+    0 0 76px rgba(212, 175, 55, 0.16) !important;
+}
+
+.product-card,
+.category-card {
+  padding: 0;
+}
+
+.product-card img,
+.category-card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  transition: 0.55s ease;
+  filter: saturate(1.06) contrast(1.02);
+}
+
+.product-card:hover img,
+.category-card:hover img {
+  transform: scale(1.07);
+}
+
+.product-body,
+.category-card div {
+  position: relative;
+  z-index: 4;
+  padding: 22px;
+}
+
+.product-body h3,
+.category-card h3,
+.card h3,
+.stat-card h3 {
+  color: var(--deep-blue);
+  font-weight: 1000;
+  margin-bottom: 8px;
+}
+
+.product-body p,
+.category-card p {
+  color: var(--gray);
+  line-height: 1.6;
+  font-weight: 650;
+}
+
+.product-body h2,
+.product-body strong {
+  color: var(--gold);
+}
+
+/* Category cards get luxury identity */
+.category-card:nth-child(4n + 1)::before {
+  background: linear-gradient(90deg, #004aad, #d4af37, #fff7d6);
+}
+
+.category-card:nth-child(4n + 2)::before {
+  background: linear-gradient(90deg, #001f4d, #d4af37, #0b5ed7);
+}
+
+.category-card:nth-child(4n + 3)::before {
+  background: linear-gradient(90deg, #b8860b, #fff7d6, #004aad);
+}
+
+.category-card:nth-child(4n + 4)::before {
+  background: linear-gradient(90deg, #0b5ed7, #d4af37, #001f4d);
+}
+
+/* =========================================================
+   OTHER HERO SECTIONS
+   ========================================================= */
+
+.customer-hero,
+.about-hero,
+.contact-hero {
+  min-height: 350px;
+  border-radius: 38px;
+  background:
+    linear-gradient(rgba(0, 31, 77, 0.62), rgba(0, 31, 77, 0.56)),
+    url("https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 54px;
+  margin-bottom: 34px;
+  box-shadow: 0 26px 68px rgba(0, 31, 77, 0.18);
+}
+
+.customer-hero h1,
+.about-hero h1,
+.contact-hero h1 {
+  font-size: clamp(34px, 5vw, 58px);
+  margin-bottom: 14px;
+}
+
+.customer-hero p,
+.about-hero p,
+.contact-hero p {
+  max-width: 780px;
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+/* =========================================================
+   ACTION CARDS / DASHBOARD CARDS
+   ========================================================= */
+
+.action-card {
+  min-height: 95px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff !important;
+  background:
+    radial-gradient(circle at top right, rgba(212, 175, 55, 0.20), transparent 34%),
+    linear-gradient(135deg, var(--blue), var(--deep-blue)) !important;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.action-card:hover {
+  color: var(--deep-blue) !important;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 34%),
+    linear-gradient(135deg, #fff7d6, var(--gold), var(--dark-gold)) !important;
+}
+
+/* =========================================================
+   FORMS / AUTH / TABLES
+   ========================================================= */
+
+.auth-page {
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background:
+    radial-gradient(circle at top right, rgba(212, 175, 55, 0.12), transparent 35%),
+    rgba(255, 255, 255, 0.96);
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  border-radius: 30px;
+  padding: 30px 26px;
+  text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow:
+    0 26px 62px rgba(0, 31, 77, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.auth-card h1 {
+  color: var(--deep-blue);
+  font-size: 26px;
+  font-weight: 1000;
+}
+
+.auth-card p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.phone-row {
+  display: grid;
+  grid-template-columns: 1.08fr 1.35fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.phone-row select,
+.phone-row input {
+  margin: 0;
+}
+
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.password-box input {
+  padding-right: 48px;
+  margin: 0;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 74, 173, 0.08);
+  color: var(--deep-blue);
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  background: var(--white);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  color: var(--deep-blue);
+  background: rgba(0, 74, 173, 0.06);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  .nav-inner {
+    padding: 10px 18px;
+    gap: 16px;
+  }
+
+  .nav-logo {
+    width: 58px;
+    height: 58px;
+  }
+
+  .nav-brand-text {
+    min-width: 218px;
+  }
+
+  .nav-brand-title {
+    font-size: 19px;
+  }
+
+  .nav-brand-subtitle {
+    font-size: 8px;
+    letter-spacing: 0.85px;
+  }
+
+  .nav-links a,
+  .nav-links .btn,
+  .nav-logout {
+    font-size: 12px;
+    padding: 9px 10px;
+  }
+
+  .home-content h1 {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 16px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+    padding: 15px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #061634, #001f4d);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a,
+  .nav-links .btn,
+  .nav-logout {
+    width: 100%;
+    text-align: center;
+    padding: 13px 14px;
+    border-radius: 18px;
+    font-size: 14px;
+  }
+
+  .home-hero {
+    min-height: auto;
+    padding: 88px 18px 70px;
+    border-radius: 0 0 52px 52px;
+  }
+
+  .home-content {
+    border-radius: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-hero {
+    padding: 68px 14px 54px;
+    border-radius: 0 0 36px 36px;
+  }
+
+  .home-content {
+    padding: 28px 18px;
+    border-radius: 26px;
+  }
+
+  .home-content::before {
+    font-size: 10px;
+    padding: 8px 12px;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+  }
+
+  .home-content h1 {
+    font-size: clamp(34px, 13vw, 52px);
+    letter-spacing: -1.2px;
+  }
+
+  .home-content h2 {
+    margin-top: 17px;
+    font-size: 11px;
+    letter-spacing: 1.7px;
+    padding: 8px 13px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button,
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-row {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  .customer-hero,
+  .about-hero,
+  .contact-hero {
+    min-height: 230px;
+    padding: 28px 18px;
+    border-radius: 24px;
+  }
+
+  .customer-hero p,
+  .about-hero p,
+  .contact-hero p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-inner {
+    padding: 9px 12px;
+    gap: 10px;
+  }
+
+  .nav-brand {
+    gap: 9px;
+    padding: 6px;
+    border-radius: 22px;
+  }
+
+  .nav-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 16px;
+  }
+
+  .nav-brand-text {
+    min-width: 166px;
+  }
+
+  .nav-brand-title {
+    font-size: 14px;
+  }
+
+  .nav-brand-subtitle {
+    max-width: 165px;
+    font-size: 6.4px;
+    padding: 4px 8px;
+    letter-spacing: 0.55px;
+  }
+
+  .nav-brand-subtitle::before,
+  .nav-brand-subtitle::after {
+    font-size: 6px;
+    margin: 0 4px;
+  }
+
+  .nav-menu-btn {
+    padding: 8px 11px;
+    font-size: 17px;
+  }
+
+  .nav-links {
+    left: 10px;
+    right: 10px;
+  }
+
+  .product-card img,
+  .category-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 430px) {
+  .nav-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-brand-text {
+    min-width: 140px;
+  }
+
+  .nav-brand-title {
+    font-size: 12.4px;
+  }
+
+  .nav-brand-subtitle {
+    max-width: 140px;
+    font-size: 5.6px;
+  }
+
+  .home-content h1 {
+    font-size: 27px;
+  }
+
+  .home-content h2 {
+    font-size: 10px;
+  }
+
+  .home-content p {
+    font-size: 12.8px;
+  }
+}
+
+
+
+/* =========================================================
+   ADMIN DASHBOARD — FINAL PREMIUM EXECUTIVE REDESIGN
+   Fixes visibility, spacing, card overflow, dashboard hero,
+   stat cards, business management cards and mobile layout.
+   Add this section LAST so it overrides previous dashboard styles.
+   ========================================================= */
+
+.admin-page,
+.admin-dashboard,
+.dashboard-page {
+  min-height: 100vh;
+  padding: 34px 24px 70px;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(212, 175, 55, 0.13), transparent 30%),
+    radial-gradient(circle at 92% 16%, rgba(0, 74, 173, 0.10), transparent 32%),
+    linear-gradient(135deg, #f6f8ff 0%, #ffffff 48%, #f8fbff 100%);
+}
+
+.admin-page .container,
+.admin-dashboard .container,
+.dashboard-page .container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* ---------- Admin Hero ---------- */
+
+.admin-hero,
+.admin-header,
+.admin-dashboard-hero {
+  position: relative;
+  overflow: hidden;
+  max-width: 1180px;
+  margin: 0 auto 28px;
+  padding: 34px 38px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 90% 8%, rgba(212, 175, 55, 0.13), transparent 34%),
+    radial-gradient(circle at 8% 95%, rgba(0, 74, 173, 0.08), transparent 35%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.96));
+  border: 1px solid rgba(212, 175, 55, 0.24);
+  box-shadow:
+    0 26px 70px rgba(0, 31, 77, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.admin-hero::before,
+.admin-header::before,
+.admin-dashboard-hero::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  top: 0;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold), var(--gold));
+}
+
+.admin-hero::after,
+.admin-header::after,
+.admin-dashboard-hero::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -105px;
+  top: -115px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.13), transparent 70%);
+  pointer-events: none;
+}
+
+.admin-hero .logo-text,
+.admin-header .logo-text,
+.admin-dashboard-hero .logo-text,
+.admin-hero h1,
+.admin-header h1,
+.admin-dashboard-hero h1 {
+  width: fit-content;
+  margin: 0 auto 18px !important;
+  padding-bottom: 18px;
+  color: var(--deep-blue) !important;
+  font-size: clamp(34px, 5vw, 58px) !important;
+  font-weight: 1000 !important;
+  line-height: 1.04 !important;
+  letter-spacing: -1.2px !important;
+  text-align: center;
+  text-shadow: none !important;
+}
+
+.admin-hero .logo-text::before,
+.admin-header .logo-text::before,
+.admin-dashboard-hero .logo-text::before {
+  content: "✦ EXECUTIVE CONTROL CENTER ✦" !important;
+  display: block;
+  margin-bottom: 11px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.admin-hero .logo-text::after,
+.admin-header .logo-text::after,
+.admin-dashboard-hero .logo-text::after,
+.admin-hero h1::after,
+.admin-header h1::after,
+.admin-dashboard-hero h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  margin: 16px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--blue), var(--gold), transparent);
+}
+
+.admin-hero h1 span,
+.admin-header h1 span,
+.admin-dashboard-hero h1 span,
+.admin-hero .gold,
+.admin-header .gold,
+.admin-dashboard-hero .gold {
+  background: linear-gradient(135deg, #fff7d6, var(--gold), var(--dark-gold), #fff8d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+.admin-hero p,
+.admin-header p,
+.admin-dashboard-hero p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #334155 !important;
+  font-size: 15.5px !important;
+  line-height: 1.75 !important;
+  font-weight: 680 !important;
+  text-align: center;
+}
+
+.admin-hero .btn,
+.admin-header .btn,
+.admin-dashboard-hero .btn,
+.admin-hero a.btn,
+.admin-header a.btn,
+.admin-dashboard-hero a.btn,
+.admin-hero button,
+.admin-header button,
+.admin-dashboard-hero button {
+  position: relative;
+  z-index: 3;
+  margin-top: 22px;
+  min-height: 46px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.34), transparent 30%),
+    linear-gradient(135deg, #fff8df, var(--gold), var(--dark-gold)) !important;
+  color: var(--deep-blue) !important;
+  font-size: 14px;
+  font-weight: 1000;
+  box-shadow:
+    0 16px 34px rgba(212, 175, 55, 0.24),
+    inset 0 1px 0 rgba(255,255,255,0.62);
+}
+
+/* ---------- Admin Stats ---------- */
+
+.admin-stats,
+.dashboard-stats,
+.stats-grid {
+  width: 100%;
+  max-width: 1180px;
+  margin: 26px auto 44px !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.admin-stats .card,
+.dashboard-stats .card,
+.stats-grid .card,
+.admin-stat-card,
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 132px !important;
+  padding: 22px 22px 20px !important;
+  border-radius: 28px !important;
+  background:
+    radial-gradient(circle at 94% 10%, rgba(212, 175, 55, 0.10), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.20) !important;
+  box-shadow:
+    0 20px 46px rgba(0, 31, 77, 0.10),
+    0 0 35px rgba(212, 175, 55, 0.05) !important;
+  transition: 0.34s ease;
+}
+
+.admin-stats .card::before,
+.dashboard-stats .card::before,
+.stats-grid .card::before,
+.admin-stat-card::before,
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 18px;
+  right: 18px;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold));
+  z-index: 2;
+}
+
+.admin-stats .card::after,
+.dashboard-stats .card::after,
+.stats-grid .card::after,
+.admin-stat-card::after,
+.stat-card::after {
+  content: "";
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  right: -65px;
+  top: -68px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.10);
+  pointer-events: none;
+}
+
+.admin-stats .card:hover,
+.dashboard-stats .card:hover,
+.stats-grid .card:hover,
+.admin-stat-card:hover,
+.stat-card:hover {
+  transform: translateY(-7px);
+  box-shadow:
+    0 30px 70px rgba(0, 31, 77, 0.16),
+    0 0 50px rgba(212, 175, 55, 0.10) !important;
+}
+
+.admin-stats .card h3,
+.dashboard-stats .card h3,
+.stats-grid .card h3,
+.admin-stat-card h3,
+.stat-card h3 {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 8px !important;
+  color: var(--deep-blue) !important;
+  font-size: 15px !important;
+  line-height: 1.25 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.2px !important;
+  text-transform: none !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.admin-stats .card h1,
+.dashboard-stats .card h1,
+.stats-grid .card h1,
+.admin-stat-card h1,
+.stat-card h1 {
+  position: relative;
+  z-index: 3;
+  margin: 0 0 5px !important;
+  color: var(--deep-blue) !important;
+  font-size: clamp(28px, 3vw, 38px) !important;
+  line-height: 1.05 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.8px;
+  overflow: visible !important;
+}
+
+.admin-stats .card p,
+.dashboard-stats .card p,
+.stats-grid .card p,
+.admin-stat-card p,
+.stat-card p {
+  position: relative;
+  z-index: 3;
+  margin: 0 !important;
+  color: #475569 !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  font-weight: 700 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* ---------- Dashboard Section Titles ---------- */
+
+.admin-page .section-title,
+.admin-dashboard .section-title,
+.dashboard-page .section-title {
+  width: fit-content;
+  margin: 48px auto 30px !important;
+  padding-bottom: 18px !important;
+  color: var(--deep-blue) !important;
+  font-size: clamp(30px, 4vw, 52px) !important;
+  font-weight: 1000 !important;
+  line-height: 1.1 !important;
+  text-align: center !important;
+  letter-spacing: -1px !important;
+}
+
+.admin-page .section-title::before,
+.admin-dashboard .section-title::before,
+.dashboard-page .section-title::before {
+  content: "✦ MANAGEMENT SUITE ✦" !important;
+  display: block;
+  margin-bottom: 11px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ---------- Business Management Cards ---------- */
+
+.admin-actions,
+.management-grid,
+.dashboard-actions {
+  max-width: 1180px;
+  margin: 0 auto 44px !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  align-items: stretch;
+}
+
+.admin-actions .action-card,
+.management-grid .action-card,
+.dashboard-actions .action-card,
+.admin-actions a,
+.management-grid a,
+.dashboard-actions a {
+  position: relative;
+  overflow: hidden;
+  min-height: 108px !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 22px 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+  text-align: center !important;
+  border-radius: 30px !important;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(212, 175, 55, 0.18), transparent 36%),
+    linear-gradient(135deg, #004aad, #001f4d) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(212, 175, 55, 0.30) !important;
+  box-shadow:
+    0 22px 54px rgba(0, 31, 77, 0.17),
+    inset 0 1px 0 rgba(255,255,255,0.13) !important;
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+  font-weight: 1000 !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+  transition: 0.36s ease !important;
+}
+
+.admin-actions .action-card::before,
+.management-grid .action-card::before,
+.dashboard-actions .action-card::before,
+.admin-actions a::before,
+.management-grid a::before,
+.dashboard-actions a::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  top: 0;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--gold), var(--soft-gold), var(--gold));
+  z-index: 2;
+}
+
+.admin-actions .action-card:hover,
+.management-grid .action-card:hover,
+.dashboard-actions .action-card:hover,
+.admin-actions a:hover,
+.management-grid a:hover,
+.dashboard-actions a:hover {
+  transform: translateY(-9px) !important;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(255,255,255,0.28), transparent 36%),
+    linear-gradient(135deg, #fff7d6, var(--gold), var(--dark-gold)) !important;
+  color: var(--deep-blue) !important;
+  box-shadow:
+    0 34px 78px rgba(0, 31, 77, 0.18),
+    0 0 62px rgba(212, 175, 55, 0.17) !important;
+}
+
+/* ---------- Fix clipped dashboard text ---------- */
+
+.admin-page .card *,
+.admin-dashboard .card *,
+.dashboard-page .card *,
+.admin-page .action-card *,
+.admin-dashboard .action-card *,
+.dashboard-page .action-card * {
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* ---------- Responsive Admin Dashboard ---------- */
+
+@media (max-width: 1200px) {
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-page,
+  .admin-dashboard,
+  .dashboard-page {
+    padding: 18px 12px 50px;
+  }
+
+  .admin-hero,
+  .admin-header,
+  .admin-dashboard-hero {
+    padding: 24px 18px;
+    border-radius: 26px;
+  }
+
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .admin-stats .card,
+  .dashboard-stats .card,
+  .stats-grid .card,
+  .admin-stat-card,
+  .stat-card {
+    min-height: 118px !important;
+    padding: 20px !important;
+  }
+
+  .admin-actions .action-card,
+  .management-grid .action-card,
+  .dashboard-actions .action-card,
+  .admin-actions a,
+  .management-grid a,
+  .dashboard-actions a {
+    min-height: 88px !important;
+    padding: 19px 16px !important;
+    border-radius: 24px !important;
+    font-size: 14px !important;
+  }
+}
+
+
+
+/* =========================================================
+   QUICK ALERTS — FINAL ARRANGED PREMIUM FIX
+   Fixes the lower dashboard cards only: Low Stock Products,
+   Pending Orders, Active Promotions and similar alert cards.
+   ========================================================= */
+
+.quick-alerts-section,
+.admin-alerts-section,
+.alerts-section,
+.dashboard-alerts {
+  max-width: 1180px;
+  margin: 0 auto 48px !important;
+  padding: 0 !important;
+}
+
+.quick-alerts-section .section-title,
+.admin-alerts-section .section-title,
+.alerts-section .section-title,
+.dashboard-alerts .section-title {
+  margin-top: 42px !important;
+  margin-bottom: 30px !important;
+}
+
+/* Arrange the alert cards beautifully */
+.quick-alerts-grid,
+.alerts-grid,
+.admin-alerts-grid,
+.dashboard-alerts-grid {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+}
+
+/* In case the page is using normal .grid for Quick Alerts */
+.quick-alerts-section .grid,
+.admin-alerts-section .grid,
+.alerts-section .grid,
+.dashboard-alerts .grid {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+
+/* Quick alert cards */
+.quick-alerts-grid .card,
+.alerts-grid .card,
+.admin-alerts-grid .card,
+.dashboard-alerts-grid .card,
+.quick-alert-card,
+.alert-card,
+.quick-alerts-section .card,
+.admin-alerts-section .card,
+.alerts-section .card,
+.dashboard-alerts .card {
+  position: relative;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 150px !important;
+  padding: 24px 24px 22px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(212, 175, 55, 0.11), transparent 34%),
+    radial-gradient(circle at 4% 92%, rgba(0, 74, 173, 0.06), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  box-shadow:
+    0 22px 52px rgba(0, 31, 77, 0.10),
+    0 0 42px rgba(212, 175, 55, 0.06) !important;
+  transform: none;
+}
+
+/* Keep the gold line beautiful but never across text */
+.quick-alerts-grid .card::before,
+.alerts-grid .card::before,
+.admin-alerts-grid .card::before,
+.dashboard-alerts-grid .card::before,
+.quick-alert-card::before,
+.alert-card::before,
+.quick-alerts-section .card::before,
+.admin-alerts-section .card::before,
+.alerts-section .card::before,
+.dashboard-alerts .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 22px;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold), var(--gold));
+  z-index: 1;
+}
+
+/* Soft glow moved away from text */
+.quick-alerts-grid .card::after,
+.alerts-grid .card::after,
+.admin-alerts-grid .card::after,
+.dashboard-alerts-grid .card::after,
+.quick-alert-card::after,
+.alert-card::after,
+.quick-alerts-section .card::after,
+.admin-alerts-section .card::after,
+.alerts-section .card::after,
+.dashboard-alerts .card::after {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  right: -68px;
+  bottom: -70px;
+  top: auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.13), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.quick-alerts-grid .card:hover,
+.alerts-grid .card:hover,
+.admin-alerts-grid .card:hover,
+.dashboard-alerts-grid .card:hover,
+.quick-alert-card:hover,
+.alert-card:hover,
+.quick-alerts-section .card:hover,
+.admin-alerts-section .card:hover,
+.alerts-section .card:hover,
+.dashboard-alerts .card:hover {
+  transform: translateY(-7px) !important;
+  box-shadow:
+    0 32px 72px rgba(0, 31, 77, 0.16),
+    0 0 58px rgba(212, 175, 55, 0.11) !important;
+}
+
+/* Text must always be visible */
+.quick-alerts-grid .card h3,
+.alerts-grid .card h3,
+.admin-alerts-grid .card h3,
+.dashboard-alerts-grid .card h3,
+.quick-alert-card h3,
+.alert-card h3,
+.quick-alerts-section .card h3,
+.admin-alerts-section .card h3,
+.alerts-section .card h3,
+.dashboard-alerts .card h3 {
+  position: relative;
+  z-index: 3;
+  margin: 0 0 14px !important;
+  color: var(--deep-blue) !important;
+  font-size: 17px !important;
+  line-height: 1.25 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.25px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.quick-alerts-grid .card h1,
+.alerts-grid .card h1,
+.admin-alerts-grid .card h1,
+.dashboard-alerts-grid .card h1,
+.quick-alert-card h1,
+.alert-card h1,
+.quick-alerts-section .card h1,
+.admin-alerts-section .card h1,
+.alerts-section .card h1,
+.dashboard-alerts .card h1 {
+  position: relative;
+  z-index: 3;
+  margin: 0 0 12px !important;
+  color: var(--deep-blue) !important;
+  font-size: 36px !important;
+  line-height: 1 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.8px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.quick-alerts-grid .card p,
+.alerts-grid .card p,
+.admin-alerts-grid .card p,
+.dashboard-alerts-grid .card p,
+.quick-alert-card p,
+.alert-card p,
+.quick-alerts-section .card p,
+.admin-alerts-section .card p,
+.alerts-section .card p,
+.dashboard-alerts .card p {
+  position: relative;
+  z-index: 3;
+  margin: 0 !important;
+  color: #334155 !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  font-weight: 700 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Make each alert card slightly distinct */
+.quick-alerts-section .card:nth-child(1) h1,
+.admin-alerts-section .card:nth-child(1) h1,
+.alerts-section .card:nth-child(1) h1,
+.dashboard-alerts .card:nth-child(1) h1,
+.quick-alerts-grid .card:nth-child(1) h1 {
+  color: #b8860b !important;
+}
+
+.quick-alerts-section .card:nth-child(2) h1,
+.admin-alerts-section .card:nth-child(2) h1,
+.alerts-section .card:nth-child(2) h1,
+.dashboard-alerts .card:nth-child(2) h1,
+.quick-alerts-grid .card:nth-child(2) h1 {
+  color: #004aad !important;
+}
+
+.quick-alerts-section .card:nth-child(3) h1,
+.admin-alerts-section .card:nth-child(3) h1,
+.alerts-section .card:nth-child(3) h1,
+.dashboard-alerts .card:nth-child(3) h1,
+.quick-alerts-grid .card:nth-child(3) h1 {
+  color: #166534 !important;
+}
+
+/* If Quick Alerts is just the next .grid after the section title, keep it centered */
+.admin-page .section-title + .grid,
+.admin-dashboard .section-title + .grid,
+.dashboard-page .section-title + .grid {
+  max-width: 1180px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Responsive quick alerts */
+@media (max-width: 1100px) {
+  .quick-alerts-grid,
+  .alerts-grid,
+  .admin-alerts-grid,
+  .dashboard-alerts-grid,
+  .quick-alerts-section .grid,
+  .admin-alerts-section .grid,
+  .alerts-section .grid,
+  .dashboard-alerts .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .quick-alerts-grid,
+  .alerts-grid,
+  .admin-alerts-grid,
+  .dashboard-alerts-grid,
+  .quick-alerts-section .grid,
+  .admin-alerts-section .grid,
+  .alerts-section .grid,
+  .dashboard-alerts .grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .quick-alerts-grid .card,
+  .alerts-grid .card,
+  .admin-alerts-grid .card,
+  .dashboard-alerts-grid .card,
+  .quick-alert-card,
+  .alert-card,
+  .quick-alerts-section .card,
+  .admin-alerts-section .card,
+  .alerts-section .card,
+  .dashboard-alerts .card {
+    min-height: 128px !important;
+    padding: 21px 20px !important;
+    border-radius: 24px !important;
+  }
+}
+
+
+
+/* =========================================================
+   ADMIN DASHBOARD — QUICK ALERTS REAL FIX
+   This fixes the lower alert cards that are still shifting left.
+   It targets the normal Admin Dashboard structure:
+   section-title + grid + card.
+   Place this LAST in your CSS.
+   ========================================================= */
+
+/* Keep only the Admin page content centered */
+.admin-page > .container,
+.admin-dashboard > .container,
+.dashboard-page > .container,
+.page > .container {
+  width: min(1180px, calc(100% - 32px)) !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
+}
+
+/* Fix every grid inside the Admin Dashboard */
+.admin-page .grid,
+.admin-dashboard .grid,
+.dashboard-page .grid,
+.page .container > .grid {
+  width: 100% !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+/* First stats grid keeps 4 cards when it has the stats cards */
+.admin-stats,
+.dashboard-stats,
+.stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+/* Fix the lower Quick Alerts cards and any later admin cards */
+.admin-page .grid .card,
+.admin-dashboard .grid .card,
+.dashboard-page .grid .card,
+.page .container > .grid .card {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  transform: none;
+  left: auto !important;
+  right: auto !important;
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 145px !important;
+  padding: 24px 24px 22px !important;
+  border-radius: 28px !important;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(212, 175, 55, 0.10), transparent 34%),
+    radial-gradient(circle at 5% 95%, rgba(0, 74, 173, 0.06), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  box-shadow:
+    0 22px 52px rgba(0, 31, 77, 0.10),
+    0 0 42px rgba(212, 175, 55, 0.06) !important;
+}
+
+/* Remove the global circle from the top left problem */
+.admin-page .grid .card::after,
+.admin-dashboard .grid .card::after,
+.dashboard-page .grid .card::after,
+.page .container > .grid .card::after {
+  content: "";
+  position: absolute !important;
+  width: 120px !important;
+  height: 120px !important;
+  right: -58px !important;
+  bottom: -62px !important;
+  top: auto !important;
+  left: auto !important;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12), transparent 70%) !important;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gold accent stays at the top and does not cover text */
+.admin-page .grid .card::before,
+.admin-dashboard .grid .card::before,
+.dashboard-page .grid .card::before,
+.page .container > .grid .card::before {
+  content: "";
+  position: absolute !important;
+  top: 0 !important;
+  left: 22px !important;
+  right: 22px !important;
+  width: auto !important;
+  height: 5px !important;
+  border-radius: 0 0 999px 999px !important;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold), var(--gold)) !important;
+  z-index: 2;
+}
+
+/* Text visibility */
+.admin-page .grid .card h3,
+.admin-dashboard .grid .card h3,
+.dashboard-page .grid .card h3,
+.page .container > .grid .card h3 {
+  position: relative !important;
+  z-index: 5 !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  color: var(--deep-blue) !important;
+  font-size: 17px !important;
+  line-height: 1.25 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.25px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  transform: none !important;
+}
+
+.admin-page .grid .card h1,
+.admin-dashboard .grid .card h1,
+.dashboard-page .grid .card h1,
+.page .container > .grid .card h1 {
+  position: relative !important;
+  z-index: 5 !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  color: var(--deep-blue) !important;
+  font-size: 36px !important;
+  line-height: 1 !important;
+  font-weight: 1000 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  transform: none !important;
+}
+
+.admin-page .grid .card p,
+.admin-dashboard .grid .card p,
+.dashboard-page .grid .card p,
+.page .container > .grid .card p {
+  position: relative !important;
+  z-index: 5 !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #334155 !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  font-weight: 700 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  transform: none !important;
+}
+
+/* Hover without moving out of place */
+.admin-page .grid .card:hover,
+.admin-dashboard .grid .card:hover,
+.dashboard-page .grid .card:hover,
+.page .container > .grid .card:hover {
+  transform: translateY(-7px) !important;
+  box-shadow:
+    0 32px 72px rgba(0, 31, 77, 0.16),
+    0 0 58px rgba(212, 175, 55, 0.11) !important;
+}
+
+/* Specific alert text colors */
+.admin-page .section-title + .grid .card:nth-child(1) h1,
+.admin-dashboard .section-title + .grid .card:nth-child(1) h1,
+.dashboard-page .section-title + .grid .card:nth-child(1) h1 {
+  color: #b8860b !important;
+}
+
+.admin-page .section-title + .grid .card:nth-child(2) h1,
+.admin-dashboard .section-title + .grid .card:nth-child(2) h1,
+.dashboard-page .section-title + .grid .card:nth-child(2) h1 {
+  color: #004aad !important;
+}
+
+.admin-page .section-title + .grid .card:nth-child(3) h1,
+.admin-dashboard .section-title + .grid .card:nth-child(3) h1,
+.dashboard-page .section-title + .grid .card:nth-child(3) h1 {
+  color: #166534 !important;
+}
+
+/* Fix page overflow causing cards to appear cut on the left */
+.admin-page,
+.admin-dashboard,
+.dashboard-page,
+.page {
+  overflow-x: hidden !important;
+}
+
+/* Responsive */
+@media (max-width: 1180px) {
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid,
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .admin-page > .container,
+  .admin-dashboard > .container,
+  .dashboard-page > .container,
+  .page > .container {
+    width: min(100%, calc(100% - 20px)) !important;
+  }
+
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid,
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .admin-page .grid .card,
+  .admin-dashboard .grid .card,
+  .dashboard-page .grid .card,
+  .page .container > .grid .card {
+    min-height: 124px !important;
+    padding: 21px 20px !important;
+    border-radius: 24px !important;
+  }
+}
+
+
+
+/* =========================================================
+   ADMIN DASHBOARD — COMPACT PREMIUM CARD SIZE FIX
+   Reduces Admin Dashboard cards beautifully and professionally.
+   Place LAST in your CSS.
+   ========================================================= */
+
+/* Main admin page spacing */
+.admin-page,
+.admin-dashboard,
+.dashboard-page {
+  padding-top: 26px !important;
+}
+
+.admin-page > .container,
+.admin-dashboard > .container,
+.dashboard-page > .container,
+.page > .container {
+  max-width: 1120px !important;
+}
+
+/* Smaller premium hero */
+.admin-hero,
+.admin-header,
+.admin-dashboard-hero {
+  max-width: 1060px !important;
+  padding: 26px 30px !important;
+  border-radius: 30px !important;
+  margin-bottom: 22px !important;
+}
+
+.admin-hero .logo-text,
+.admin-header .logo-text,
+.admin-dashboard-hero .logo-text,
+.admin-hero h1,
+.admin-header h1,
+.admin-dashboard-hero h1 {
+  font-size: clamp(30px, 4.3vw, 48px) !important;
+  margin-bottom: 12px !important;
+  padding-bottom: 14px !important;
+}
+
+.admin-hero p,
+.admin-header p,
+.admin-dashboard-hero p {
+  max-width: 760px !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+.admin-hero .btn,
+.admin-header .btn,
+.admin-dashboard-hero .btn,
+.admin-hero a.btn,
+.admin-header a.btn,
+.admin-dashboard-hero a.btn,
+.admin-hero button,
+.admin-header button,
+.admin-dashboard-hero button {
+  min-height: 40px !important;
+  padding: 0 20px !important;
+  font-size: 13px !important;
+  margin-top: 17px !important;
+}
+
+/* Compact stat cards */
+.admin-stats,
+.dashboard-stats,
+.stats-grid {
+  max-width: 1060px !important;
+  gap: 14px !important;
+  margin: 20px auto 34px !important;
+}
+
+.admin-stats .card,
+.dashboard-stats .card,
+.stats-grid .card,
+.admin-stat-card,
+.stat-card {
+  min-height: 104px !important;
+  padding: 17px 18px 16px !important;
+  border-radius: 22px !important;
+  box-shadow:
+    0 14px 34px rgba(0, 31, 77, 0.09),
+    0 0 28px rgba(212, 175, 55, 0.045) !important;
+}
+
+.admin-stats .card::before,
+.dashboard-stats .card::before,
+.stats-grid .card::before,
+.admin-stat-card::before,
+.stat-card::before {
+  left: 16px !important;
+  right: 16px !important;
+  height: 4px !important;
+}
+
+.admin-stats .card::after,
+.dashboard-stats .card::after,
+.stats-grid .card::after,
+.admin-stat-card::after,
+.stat-card::after {
+  width: 96px !important;
+  height: 96px !important;
+  right: -48px !important;
+  top: -50px !important;
+}
+
+.admin-stats .card h3,
+.dashboard-stats .card h3,
+.stats-grid .card h3,
+.admin-stat-card h3,
+.stat-card h3 {
+  font-size: 13.2px !important;
+  margin-bottom: 6px !important;
+  line-height: 1.2 !important;
+}
+
+.admin-stats .card h1,
+.dashboard-stats .card h1,
+.stats-grid .card h1,
+.admin-stat-card h1,
+.stat-card h1 {
+  font-size: clamp(24px, 2.6vw, 32px) !important;
+  margin-bottom: 4px !important;
+}
+
+.admin-stats .card p,
+.dashboard-stats .card p,
+.stats-grid .card p,
+.admin-stat-card p,
+.stat-card p {
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+}
+
+/* Smaller section titles */
+.admin-page .section-title,
+.admin-dashboard .section-title,
+.dashboard-page .section-title {
+  font-size: clamp(28px, 3.5vw, 44px) !important;
+  margin: 38px auto 24px !important;
+  padding-bottom: 14px !important;
+}
+
+/* Compact business management/action cards */
+.admin-actions,
+.management-grid,
+.dashboard-actions {
+  max-width: 1060px !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-bottom: 34px !important;
+}
+
+.admin-actions .action-card,
+.management-grid .action-card,
+.dashboard-actions .action-card,
+.admin-actions a,
+.management-grid a,
+.dashboard-actions a {
+  min-height: 82px !important;
+  padding: 17px 14px !important;
+  border-radius: 22px !important;
+  font-size: 13.2px !important;
+  line-height: 1.28 !important;
+  box-shadow:
+    0 16px 38px rgba(0, 31, 77, 0.14),
+    inset 0 1px 0 rgba(255,255,255,0.12) !important;
+}
+
+.admin-actions .action-card::before,
+.management-grid .action-card::before,
+.dashboard-actions .action-card::before,
+.admin-actions a::before,
+.management-grid a::before,
+.dashboard-actions a::before {
+  left: 16px !important;
+  right: 16px !important;
+  height: 4px !important;
+}
+
+/* Compact Quick Alerts and lower dashboard cards */
+.admin-page .grid,
+.admin-dashboard .grid,
+.dashboard-page .grid,
+.page .container > .grid {
+  max-width: 1060px !important;
+  gap: 14px !important;
+}
+
+.admin-page .grid .card,
+.admin-dashboard .grid .card,
+.dashboard-page .grid .card,
+.page .container > .grid .card,
+.quick-alerts-grid .card,
+.alerts-grid .card,
+.admin-alerts-grid .card,
+.dashboard-alerts-grid .card,
+.quick-alert-card,
+.alert-card,
+.quick-alerts-section .card,
+.admin-alerts-section .card,
+.alerts-section .card,
+.dashboard-alerts .card {
+  min-height: 112px !important;
+  padding: 18px 18px 16px !important;
+  border-radius: 22px !important;
+  box-shadow:
+    0 15px 36px rgba(0, 31, 77, 0.09),
+    0 0 30px rgba(212, 175, 55, 0.05) !important;
+}
+
+.admin-page .grid .card::before,
+.admin-dashboard .grid .card::before,
+.dashboard-page .grid .card::before,
+.page .container > .grid .card::before,
+.quick-alerts-grid .card::before,
+.alerts-grid .card::before,
+.admin-alerts-grid .card::before,
+.dashboard-alerts-grid .card::before,
+.quick-alert-card::before,
+.alert-card::before,
+.quick-alerts-section .card::before,
+.admin-alerts-section .card::before,
+.alerts-section .card::before,
+.dashboard-alerts .card::before {
+  left: 16px !important;
+  right: 16px !important;
+  height: 4px !important;
+}
+
+.admin-page .grid .card::after,
+.admin-dashboard .grid .card::after,
+.dashboard-page .grid .card::after,
+.page .container > .grid .card::after,
+.quick-alerts-grid .card::after,
+.alerts-grid .card::after,
+.admin-alerts-grid .card::after,
+.dashboard-alerts-grid .card::after,
+.quick-alert-card::after,
+.alert-card::after,
+.quick-alerts-section .card::after,
+.admin-alerts-section .card::after,
+.alerts-section .card::after,
+.dashboard-alerts .card::after {
+  width: 96px !important;
+  height: 96px !important;
+  right: -48px !important;
+  bottom: -50px !important;
+}
+
+.admin-page .grid .card h3,
+.admin-dashboard .grid .card h3,
+.dashboard-page .grid .card h3,
+.page .container > .grid .card h3,
+.quick-alerts-grid .card h3,
+.alerts-grid .card h3,
+.admin-alerts-grid .card h3,
+.dashboard-alerts-grid .card h3,
+.quick-alert-card h3,
+.alert-card h3,
+.quick-alerts-section .card h3,
+.admin-alerts-section .card h3,
+.alerts-section .card h3,
+.dashboard-alerts .card h3 {
+  font-size: 14.5px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.22 !important;
+}
+
+.admin-page .grid .card h1,
+.admin-dashboard .grid .card h1,
+.dashboard-page .grid .card h1,
+.page .container > .grid .card h1,
+.quick-alerts-grid .card h1,
+.alerts-grid .card h1,
+.admin-alerts-grid .card h1,
+.dashboard-alerts-grid .card h1,
+.quick-alert-card h1,
+.alert-card h1,
+.quick-alerts-section .card h1,
+.admin-alerts-section .card h1,
+.alerts-section .card h1,
+.dashboard-alerts .card h1 {
+  font-size: 29px !important;
+  margin-bottom: 7px !important;
+}
+
+.admin-page .grid .card p,
+.admin-dashboard .grid .card p,
+.dashboard-page .grid .card p,
+.page .container > .grid .card p,
+.quick-alerts-grid .card p,
+.alerts-grid .card p,
+.admin-alerts-grid .card p,
+.dashboard-alerts-grid .card p,
+.quick-alert-card p,
+.alert-card p,
+.quick-alerts-section .card p,
+.admin-alerts-section .card p,
+.alerts-section .card p,
+.dashboard-alerts .card p {
+  font-size: 12.5px !important;
+  line-height: 1.42 !important;
+}
+
+/* Elegant hover but not too dramatic */
+.admin-stats .card:hover,
+.dashboard-stats .card:hover,
+.stats-grid .card:hover,
+.admin-stat-card:hover,
+.stat-card:hover,
+.admin-page .grid .card:hover,
+.admin-dashboard .grid .card:hover,
+.dashboard-page .grid .card:hover,
+.page .container > .grid .card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow:
+    0 24px 56px rgba(0, 31, 77, 0.14),
+    0 0 42px rgba(212, 175, 55, 0.10) !important;
+}
+
+.admin-actions .action-card:hover,
+.management-grid .action-card:hover,
+.dashboard-actions .action-card:hover,
+.admin-actions a:hover,
+.management-grid a:hover,
+.dashboard-actions a:hover {
+  transform: translateY(-6px) !important;
+}
+
+/* Responsive */
+@media (max-width: 1180px) {
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions,
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .admin-hero,
+  .admin-header,
+  .admin-dashboard-hero {
+    padding: 22px 16px !important;
+    border-radius: 24px !important;
+  }
+
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions,
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .admin-stats .card,
+  .dashboard-stats .card,
+  .stats-grid .card,
+  .admin-page .grid .card,
+  .admin-dashboard .grid .card,
+  .dashboard-page .grid .card,
+  .page .container > .grid .card {
+    min-height: 98px !important;
+    padding: 17px 16px !important;
+  }
+
+  .admin-actions .action-card,
+  .management-grid .action-card,
+  .dashboard-actions .action-card,
+  .admin-actions a,
+  .management-grid a,
+  .dashboard-actions a {
+    min-height: 76px !important;
+    padding: 16px !important;
+  }
+}
+
+/* Admin page container */
+.admin-page > .container,
+.admin-dashboard > .container,
+.dashboard-page > .container,
+.page > .container {
+  width: min(1120px, calc(100% - 32px)) !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
+}
+
+/* Statistics layout:
+   Row 1: Total Users | Total Products | Total Orders
+   Row 2:             Total Revenue
+*/
+.admin-stats,
+.dashboard-stats,
+.stats-grid {
+  width: 100% !important;
+  max-width: 980px !important;
+  margin: 22px auto 40px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+}
+
+/* Put the 4th card, Total Revenue, in the middle column */
+.admin-stats .card:nth-child(4),
+.dashboard-stats .card:nth-child(4),
+.stats-grid .card:nth-child(4) {
+  grid-column: 2 / 3 !important;
+  grid-row: 2 !important;
+}
+
+/* Compact, elegant stat cards */
+.admin-stats .card,
+.dashboard-stats .card,
+.stats-grid .card {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 105px !important;
+  padding: 18px 18px 16px !important;
+  border-radius: 23px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(212, 175, 55, 0.10), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(0, 74, 173, 0.055), transparent 34%),
+    linear-gradient(145deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  box-shadow:
+    0 16px 38px rgba(0, 31, 77, 0.09),
+    0 0 32px rgba(212, 175, 55, 0.055) !important;
+  transform: none !important;
+}
+
+/* Special premium look for Total Revenue card */
+.admin-stats .card:nth-child(4),
+.dashboard-stats .card:nth-child(4),
+.stats-grid .card:nth-child(4) {
+  min-height: 112px !important;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(255, 247, 214, 0.26), transparent 34%),
+    linear-gradient(135deg, #ffffff, #fffaf0 45%, #f8fbff) !important;
+  border: 1px solid rgba(212, 175, 55, 0.36) !important;
+  box-shadow:
+    0 20px 48px rgba(0, 31, 77, 0.11),
+    0 0 45px rgba(212, 175, 55, 0.12) !important;
+}
+
+/* Gold top accent */
+.admin-stats .card::before,
+.dashboard-stats .card::before,
+.stats-grid .card::before {
+  content: "";
+  position: absolute !important;
+  top: 0 !important;
+  left: 16px !important;
+  right: 16px !important;
+  width: auto !important;
+  height: 4px !important;
+  border-radius: 0 0 999px 999px !important;
+  background: linear-gradient(90deg, var(--blue), var(--gold), var(--soft-gold), var(--gold)) !important;
+  z-index: 2 !important;
+}
+
+/* Soft decorative glow away from text */
+.admin-stats .card::after,
+.dashboard-stats .card::after,
+.stats-grid .card::after {
+  content: "";
+  position: absolute !important;
+  width: 96px !important;
+  height: 96px !important;
+  right: -48px !important;
+  bottom: -50px !important;
+  top: auto !important;
+  left: auto !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12), transparent 70%) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Clear readable text */
+.admin-stats .card h3,
+.dashboard-stats .card h3,
+.stats-grid .card h3 {
+  position: relative !important;
+  z-index: 5 !important;
+  margin: 0 0 6px !important;
+  padding: 0 !important;
+  color: var(--deep-blue) !important;
+  font-size: 13.5px !important;
+  line-height: 1.22 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.15px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.admin-stats .card h1,
+.dashboard-stats .card h1,
+.stats-grid .card h1 {
+  position: relative !important;
+  z-index: 5 !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
+  color: var(--deep-blue) !important;
+  font-size: clamp(24px, 2.8vw, 32px) !important;
+  line-height: 1.05 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.8px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Revenue amount color */
+.admin-stats .card:nth-child(4) h1,
+.dashboard-stats .card:nth-child(4) h1,
+.stats-grid .card:nth-child(4) h1 {
+  color: #166534 !important;
+}
+
+.admin-stats .card p,
+.dashboard-stats .card p,
+.stats-grid .card p {
+  position: relative !important;
+  z-index: 5 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #475569 !important;
+  font-size: 12px !important;
+  line-height: 1.38 !important;
+  font-weight: 700 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Smooth professional hover */
+.admin-stats .card:hover,
+.dashboard-stats .card:hover,
+.stats-grid .card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow:
+    0 26px 60px rgba(0, 31, 77, 0.14),
+    0 0 44px rgba(212, 175, 55, 0.10) !important;
+}
+
+/* Keep all other admin grids neat and compact */
+.admin-page .grid,
+.admin-dashboard .grid,
+.dashboard-page .grid,
+.page .container > .grid {
+  max-width: 1060px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  gap: 14px !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid {
+    max-width: 680px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .admin-stats .card:nth-child(4),
+  .dashboard-stats .card:nth-child(4),
+  .stats-grid .card:nth-child(4) {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    max-width: 330px !important;
+    justify-self: center !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .admin-stats .card:nth-child(4),
+  .dashboard-stats .card:nth-child(4),
+  .stats-grid .card:nth-child(4) {
+    grid-column: auto !important;
+    max-width: 100% !important;
+  }
+
+  .admin-stats .card,
+  .dashboard-stats .card,
+  .stats-grid .card {
+    min-height: 98px !important;
+    padding: 17px 16px !important;
+    border-radius: 22px !important;
+  }
+}
+
+
+
+
+/* Center the whole admin content with a more refined width */
+.admin-page > .container,
+.admin-dashboard > .container,
+.dashboard-page > .container,
+.page > .container {
+  width: min(100%, 1040px) !important;
+  max-width: 1040px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Stats row: smaller, elegant cards */
+.admin-stats,
+.dashboard-stats,
+.stats-grid {
+  max-width: 820px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+/* Keep Total Revenue centered under the 3 cards */
+.admin-stats .card:nth-child(4),
+.dashboard-stats .card:nth-child(4),
+.stats-grid .card:nth-child(4) {
+  grid-column: 2 / 3 !important;
+  justify-self: center !important;
+  width: 100% !important;
+  max-width: 260px !important;
+}
+
+/* Reduce width feel without changing the beautiful height */
+.admin-stats .card,
+.dashboard-stats .card,
+.stats-grid .card {
+  max-width: 260px !important;
+  justify-self: center !important;
+  width: 100% !important;
+}
+
+/* Business management cards: smaller and cleaner */
+.admin-actions,
+.management-grid,
+.dashboard-actions {
+  max-width: 880px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.admin-actions .action-card,
+.management-grid .action-card,
+.dashboard-actions .action-card,
+.admin-actions a,
+.management-grid a,
+.dashboard-actions a {
+  max-width: 200px !important;
+  width: 100% !important;
+  justify-self: center !important;
+}
+
+/* Quick Alerts and all lower dashboard cards */
+.admin-page .grid,
+.admin-dashboard .grid,
+.dashboard-page .grid,
+.page .container > .grid,
+.quick-alerts-grid,
+.alerts-grid,
+.admin-alerts-grid,
+.dashboard-alerts-grid,
+.quick-alerts-section .grid,
+.admin-alerts-section .grid,
+.alerts-section .grid,
+.dashboard-alerts .grid {
+  max-width: 860px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+
+.admin-page .grid .card,
+.admin-dashboard .grid .card,
+.dashboard-page .grid .card,
+.page .container > .grid .card,
+.quick-alerts-grid .card,
+.alerts-grid .card,
+.admin-alerts-grid .card,
+.dashboard-alerts-grid .card,
+.quick-alert-card,
+.alert-card,
+.quick-alerts-section .card,
+.admin-alerts-section .card,
+.alerts-section .card,
+.dashboard-alerts .card {
+  max-width: 265px !important;
+  width: 100% !important;
+  justify-self: center !important;
+}
+
+.admin-stats .card h3,
+.dashboard-stats .card h3,
+.stats-grid .card h3,
+.admin-page .grid .card h3,
+.admin-dashboard .grid .card h3,
+.dashboard-page .grid .card h3,
+.page .container > .grid .card h3 {
+  font-size: 13px !important;
+}
+
+.admin-stats .card h1,
+.dashboard-stats .card h1,
+.stats-grid .card h1,
+.admin-page .grid .card h1,
+.admin-dashboard .grid .card h1,
+.dashboard-page .grid .card h1,
+.page .container > .grid .card h1 {
+  font-size: 28px !important;
+}
+
+.admin-stats .card p,
+.dashboard-stats .card p,
+.stats-grid .card p,
+.admin-page .grid .card p,
+.admin-dashboard .grid .card p,
+.dashboard-page .grid .card p,
+.page .container > .grid .card p {
+  font-size: 12px !important;
+  line-height: 1.38 !important;
+}
+
+/* Section titles stay centered over the narrower dashboard */
+.admin-page .section-title,
+.admin-dashboard .section-title,
+.dashboard-page .section-title {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid,
+  .quick-alerts-grid,
+  .alerts-grid,
+  .admin-alerts-grid,
+  .dashboard-alerts-grid,
+  .quick-alerts-section .grid,
+  .admin-alerts-section .grid,
+  .alerts-section .grid,
+  .dashboard-alerts .grid {
+    max-width: 560px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .admin-stats .card:nth-child(4),
+  .dashboard-stats .card:nth-child(4),
+  .stats-grid .card:nth-child(4) {
+    grid-column: 1 / -1 !important;
+    max-width: 260px !important;
+  }
+
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions {
+    max-width: 560px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .admin-actions .action-card,
+  .management-grid .action-card,
+  .dashboard-actions .action-card,
+  .admin-actions a,
+  .management-grid a,
+  .dashboard-actions a {
+    max-width: 260px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .admin-page > .container,
+  .admin-dashboard > .container,
+  .dashboard-page > .container,
+  .page > .container {
+    width: min(100%, calc(100% - 20px)) !important;
+  }
+
+  .admin-stats,
+  .dashboard-stats,
+  .stats-grid,
+  .admin-page .grid,
+  .admin-dashboard .grid,
+  .dashboard-page .grid,
+  .page .container > .grid,
+  .quick-alerts-grid,
+  .alerts-grid,
+  .admin-alerts-grid,
+  .dashboard-alerts-grid,
+  .quick-alerts-section .grid,
+  .admin-alerts-section .grid,
+  .alerts-section .grid,
+  .dashboard-alerts .grid,
+  .admin-actions,
+  .management-grid,
+  .dashboard-actions {
+    max-width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .admin-stats .card,
+  .dashboard-stats .card,
+  .stats-grid .card,
+  .admin-page .grid .card,
+  .admin-dashboard .grid .card,
+  .dashboard-page .grid .card,
+  .page .container > .grid .card,
+  .admin-actions .action-card,
+  .management-grid .action-card,
+  .dashboard-actions .action-card,
+  .admin-actions a,
+  .management-grid a,
+  .dashboard-actions a {
+    max-width: 100% !important;
+  }
+
+  .admin-stats .card:nth-child(4),
+  .dashboard-stats .card:nth-child(4),
+  .stats-grid .card:nth-child(4) {
+    max-width: 100% !important;
+    grid-column: auto !important;
+  }
+}
+
+/* ---------- Verify Payments Fast ---------- */
+.admin-actions a[href*="payment"],
+.admin-actions a[href*="payments"],
+.management-grid a[href*="payment"],
+.management-grid a[href*="payments"],
+.dashboard-actions a[href*="payment"],
+.dashboard-actions a[href*="payments"],
+.cashier-actions a[href*="payment"],
+.cashier-actions a[href*="payments"],
+.action-card.verify-payments,
+.action-card.verify-payments-fast,
+.verify-payments,
+.verify-payments-fast {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(255, 255, 255, 0.20), transparent 34%),
+    radial-gradient(circle at 8% 100%, rgba(45, 212, 191, 0.20), transparent 35%),
+    linear-gradient(135deg, #0f766e 0%, #0d9488 45%, #064e3b 100%) !important;
+  color: #ffffff !important;
+  border-color: rgba(153, 246, 228, 0.48) !important;
+  box-shadow:
+    0 18px 42px rgba(13, 148, 136, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+.admin-actions a[href*="payment"]::before,
+.admin-actions a[href*="payments"]::before,
+.management-grid a[href*="payment"]::before,
+.management-grid a[href*="payments"]::before,
+.dashboard-actions a[href*="payment"]::before,
+.dashboard-actions a[href*="payments"]::before,
+.cashier-actions a[href*="payment"]::before,
+.cashier-actions a[href*="payments"]::before,
+.action-card.verify-payments::before,
+.action-card.verify-payments-fast::before,
+.verify-payments::before,
+.verify-payments-fast::before {
+  background: linear-gradient(90deg, #ccfbf1, #5eead4, #ffffff, #2dd4bf) !important;
+}
+
+/* ---------- Print Receipts ---------- */
+.admin-actions a[href*="receipt"],
+.admin-actions a[href*="receipts"],
+.management-grid a[href*="receipt"],
+.management-grid a[href*="receipts"],
+.dashboard-actions a[href*="receipt"],
+.dashboard-actions a[href*="receipts"],
+.cashier-actions a[href*="receipt"],
+.cashier-actions a[href*="receipts"],
+.action-card.print-receipts,
+.print-receipts,
+.receipt-card,
+.receipts-card {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(255, 255, 255, 0.20), transparent 34%),
+    radial-gradient(circle at 8% 100%, rgba(196, 181, 253, 0.22), transparent 36%),
+    linear-gradient(135deg, #7c3aed 0%, #5b21b6 48%, #312e81 100%) !important;
+  color: #ffffff !important;
+  border-color: rgba(221, 214, 254, 0.50) !important;
+  box-shadow:
+    0 18px 42px rgba(124, 58, 237, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+.admin-actions a[href*="receipt"]::before,
+.admin-actions a[href*="receipts"]::before,
+.management-grid a[href*="receipt"]::before,
+.management-grid a[href*="receipts"]::before,
+.dashboard-actions a[href*="receipt"]::before,
+.dashboard-actions a[href*="receipts"]::before,
+.cashier-actions a[href*="receipt"]::before,
+.cashier-actions a[href*="receipts"]::before,
+.action-card.print-receipts::before,
+.print-receipts::before,
+.receipt-card::before,
+.receipts-card::before {
+  background: linear-gradient(90deg, #ede9fe, #c4b5fd, #ffffff, #a78bfa) !important;
+}
+
+/* ---------- Balances ---------- */
+.admin-actions a[href*="balance"],
+.admin-actions a[href*="balances"],
+.management-grid a[href*="balance"],
+.management-grid a[href*="balances"],
+.dashboard-actions a[href*="balance"],
+.dashboard-actions a[href*="balances"],
+.cashier-actions a[href*="balance"],
+.cashier-actions a[href*="balances"],
+.action-card.balances,
+.action-card.balance-card,
+.balances,
+.balances-card,
+.balance-card {
+  background:
+    radial-gradient(circle at 92% 8%, rgba(255, 255, 255, 0.26), transparent 34%),
+    radial-gradient(circle at 8% 100%, rgba(255, 243, 196, 0.28), transparent 36%),
+    linear-gradient(135deg, #b8860b 0%, #d4af37 48%, #7c4a03 100%) !important;
+  color: #001f4d !important;
+  border-color: rgba(255, 243, 196, 0.68) !important;
+  box-shadow:
+    0 18px 42px rgba(212, 175, 55, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36) !important;
+}
+
+.admin-actions a[href*="balance"]::before,
+.admin-actions a[href*="balances"]::before,
+.management-grid a[href*="balance"]::before,
+.management-grid a[href*="balances"]::before,
+.dashboard-actions a[href*="balance"]::before,
+.dashboard-actions a[href*="balances"]::before,
+.cashier-actions a[href*="balance"]::before,
+.cashier-actions a[href*="balances"]::before,
+.action-card.balances::before,
+.action-card.balance-card::before,
+.balances::before,
+.balances-card::before,
+.balance-card::before {
+  background: linear-gradient(90deg, #001f4d, #fff7d6, #ffffff, #001f4d) !important;
+}
+
+/* Keep special action text visible */
+.admin-actions a[href*="payment"] *,
+.admin-actions a[href*="payments"] *,
+.admin-actions a[href*="receipt"] *,
+.admin-actions a[href*="receipts"] *,
+.admin-actions a[href*="balance"] *,
+.admin-actions a[href*="balances"] *,
+.management-grid a[href*="payment"] *,
+.management-grid a[href*="payments"] *,
+.management-grid a[href*="receipt"] *,
+.management-grid a[href*="receipts"] *,
+.management-grid a[href*="balance"] *,
+.management-grid a[href*="balances"] *,
+.dashboard-actions a[href*="payment"] *,
+.dashboard-actions a[href*="payments"] *,
+.dashboard-actions a[href*="receipt"] *,
+.dashboard-actions a[href*="receipts"] *,
+.dashboard-actions a[href*="balance"] *,
+.dashboard-actions a[href*="balances"] *,
+.cashier-actions a[href*="payment"] *,
+.cashier-actions a[href*="payments"] *,
+.cashier-actions a[href*="receipt"] *,
+.cashier-actions a[href*="receipts"] *,
+.cashier-actions a[href*="balance"] *,
+.cashier-actions a[href*="balances"] * {
+  color: inherit !important;
+  position: relative;
+  z-index: 5;
+}
+
+/* =========================================================
+   AUTH PAGES
+   ========================================================= */
+
+.auth-page,
+.login-page,
+.signup-page,
+.forgot-page,
+.forgot-password-page {
+  min-height: 100vh !important;
+  padding: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 10% 12%, rgba(212, 175, 55, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(0, 74, 173, 0.18), transparent 30%),
+    linear-gradient(135deg, #061634 0%, #001f4d 44%, #f6f8ff 44.4%, #ffffff 100%) !important;
+}
+
+.auth-page::before,
+.login-page::before,
+.signup-page::before,
+.forgot-page::before,
+.forgot-password-page::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  left: -230px;
+  bottom: -245px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow:
+    0 0 0 42px rgba(255, 255, 255, 0.025),
+    0 0 0 92px rgba(212, 175, 55, 0.04),
+    0 0 95px rgba(212, 175, 55, 0.12);
+  pointer-events: none;
+}
+
+.auth-page::after,
+.login-page::after,
+.signup-page::after,
+.forgot-page::after,
+.forgot-password-page::after {
+  content: "CHAFADIA ENTERPRISE";
+  position: absolute;
+  right: -45px;
+  bottom: 20px;
+  color: rgba(0, 31, 77, 0.045);
+  font-size: clamp(38px, 9vw, 116px);
+  font-weight: 1000;
+  letter-spacing: -3px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.auth-card,
+.login-card,
+.signup-card,
+.forgot-card,
+.forgot-password-card {
+  width: 100% !important;
+  max-width: 455px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  padding: 34px 30px 30px !important;
+  border-radius: 34px !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 92% 0%, rgba(212, 175, 55, 0.18), transparent 34%),
+    radial-gradient(circle at 0% 100%, rgba(0, 74, 173, 0.08), transparent 35%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.99), rgba(248, 251, 255, 0.97)) !important;
+  -webkit-backdrop-filter: blur(22px) !important;
+  backdrop-filter: blur(22px) !important;
+  border: 1px solid rgba(212, 175, 55, 0.38) !important;
+  box-shadow:
+    0 34px 85px rgba(0, 31, 77, 0.22),
+    0 0 70px rgba(212, 175, 55, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82) !important;
+}
+
+.auth-card::before,
+.login-card::before,
+.signup-card::before,
+.forgot-card::before,
+.forgot-password-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 28px;
+  height: 5px;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, #004aad, #d4af37, #fff7d6, #d4af37);
+  z-index: 3;
+}
+
+.auth-card h1,
+.login-card h1,
+.signup-card h1,
+.forgot-card h1,
+.forgot-password-card h1 {
+  position: relative;
+  z-index: 4;
+  margin-bottom: 8px !important;
+  color: #001f4d !important;
+  font-size: clamp(25px, 4vw, 32px) !important;
+  line-height: 1.12 !important;
+  font-weight: 1000 !important;
+  letter-spacing: -0.6px !important;
+}
+
+.auth-card h1::before,
+.login-card h1::before,
+.signup-card h1::before,
+.forgot-card h1::before,
+.forgot-password-card h1::before {
+  content: "✦ SECURE ACCESS ✦";
+  display: block;
+  margin-bottom: 10px;
+  color: #d4af37;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.auth-card p,
+.login-card p,
+.signup-card p,
+.forgot-card p,
+.forgot-password-card p {
+  position: relative;
+  z-index: 4;
+  margin-bottom: 16px !important;
+  color: #475569 !important;
+  line-height: 1.62 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.auth-card input,
+.auth-card select,
+.auth-card textarea,
+.login-card input,
+.login-card select,
+.login-card textarea,
+.signup-card input,
+.signup-card select,
+.signup-card textarea,
+.forgot-card input,
+.forgot-card select,
+.forgot-card textarea,
+.forgot-password-card input,
+.forgot-password-card select,
+.forgot-password-card textarea {
+  position: relative;
+  z-index: 4;
+  min-height: 48px !important;
+  padding: 13px 15px !important;
+  margin: 7px 0 !important;
+  border-radius: 17px !important;
+  background: linear-gradient(135deg, #ffffff, #f8fbff) !important;
+  border: 1px solid rgba(0, 74, 173, 0.16) !important;
+  color: #001f4d !important;
+  font-size: 14px !important;
+  font-weight: 750 !important;
+  box-shadow:
+    0 10px 24px rgba(0, 31, 77, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.80) !important;
+}
+
+/* checkboxes on the auth pages keep their normal size next to their text */
+.auth-card input[type="checkbox"],
+.auth-card input[type="radio"] {
+  flex: 0 0 auto;
+  width: 18px !important;
+  height: 18px !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 2px 0 0 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  accent-color: #004aad;
+}
+
+.auth-card input:focus,
+.auth-card select:focus,
+.auth-card textarea:focus,
+.login-card input:focus,
+.login-card select:focus,
+.login-card textarea:focus,
+.signup-card input:focus,
+.signup-card select:focus,
+.signup-card textarea:focus,
+.forgot-card input:focus,
+.forgot-card select:focus,
+.forgot-card textarea:focus,
+.forgot-password-card input:focus,
+.forgot-password-card select:focus,
+.forgot-password-card textarea:focus {
+  border-color: #d4af37 !important;
+  box-shadow:
+    0 0 0 4px rgba(212, 175, 55, 0.15),
+    0 14px 30px rgba(0, 31, 77, 0.08) !important;
+}
+
+.auth-card .btn,
+.auth-card .btn-primary,
+.auth-card button[type="submit"],
+.login-card .btn,
+.login-card .btn-primary,
+.login-card button[type="submit"],
+.signup-card .btn,
+.signup-card .btn-primary,
+.signup-card button[type="submit"],
+.forgot-card .btn,
+.forgot-card .btn-primary,
+.forgot-card button[type="submit"],
+.forgot-password-card .btn,
+.forgot-password-card .btn-primary,
+.forgot-password-card button[type="submit"] {
+  position: relative;
+  z-index: 4;
+  width: 100% !important;
+  min-height: 50px !important;
+  margin-top: 12px !important;
+  border-radius: 999px !important;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(255, 255, 255, 0.30), transparent 32%),
+    linear-gradient(135deg, #004aad, #001f4d) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(212, 175, 55, 0.34) !important;
+  box-shadow:
+    0 18px 40px rgba(0, 31, 77, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16) !important;
+  font-size: 14px !important;
+  font-weight: 1000 !important;
+}
+
+.auth-card .btn:hover,
+.auth-card .btn-primary:hover,
+.auth-card button[type="submit"]:hover,
+.login-card .btn:hover,
+.login-card .btn-primary:hover,
+.login-card button[type="submit"]:hover,
+.signup-card .btn:hover,
+.signup-card .btn-primary:hover,
+.signup-card button[type="submit"]:hover,
+.forgot-card .btn:hover,
+.forgot-card .btn-primary:hover,
+.forgot-card button[type="submit"]:hover,
+.forgot-password-card .btn:hover,
+.forgot-password-card .btn-primary:hover,
+.forgot-password-card button[type="submit"]:hover {
+  transform: translateY(-3px) !important;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(255, 255, 255, 0.35), transparent 32%),
+    linear-gradient(135deg, #fff7d6, #d4af37, #b8860b) !important;
+  color: #001f4d !important;
+}
+
+/* ---------- Continue with Google ---------- */
+.google-btn,
+.btn-google,
+.google-login-btn,
+.continue-google,
+.continue-with-google,
+.auth-card button.google,
+.auth-card .google,
+.auth-card .google-btn,
+.login-card button.google,
+.login-card .google,
+.login-card .google-btn,
+.signup-card button.google,
+.signup-card .google,
+.signup-card .google-btn {
+  width: 100% !important;
+  min-height: 52px !important;
+  margin: 14px 0 10px !important;
+  padding: 0 18px !important;
+  border-radius: 999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 11px !important;
+  position: relative !important;
+  z-index: 4 !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at 88% 5%, rgba(212, 175, 55, 0.16), transparent 34%),
+    linear-gradient(135deg, #ffffff 0%, #fffaf0 52%, #f8fbff 100%) !important;
+  color: #001f4d !important;
+  border: 1px solid rgba(212, 175, 55, 0.44) !important;
+  box-shadow:
+    0 16px 36px rgba(0, 31, 77, 0.11),
+    0 0 35px rgba(212, 175, 55, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88) !important;
+  font-size: 14px !important;
+  font-weight: 1000 !important;
+  letter-spacing: 0.1px !important;
+  transition: 0.35s ease !important;
+}
+
+.google-btn::before,
+.btn-google::before,
+.google-login-btn::before,
+.continue-google::before,
+.continue-with-google::before,
+.auth-card button.google::before,
+.auth-card .google::before,
+.auth-card .google-btn::before,
+.login-card button.google::before,
+.login-card .google::before,
+.login-card .google-btn::before,
+.signup-card button.google::before,
+.signup-card .google::before,
+.signup-card .google-btn::before {
+  content: "G";
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: conic-gradient(from 45deg, #4285f4, #34a853, #fbbc05, #ea4335, #4285f4);
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 15px;
+  box-shadow: 0 8px 18px rgba(0, 31, 77, 0.16);
+  flex-shrink: 0;
+}
+
+.google-btn:hover,
+.btn-google:hover,
+.google-login-btn:hover,
+.continue-google:hover,
+.continue-with-google:hover,
+.auth-card button.google:hover,
+.auth-card .google:hover,
+.auth-card .google-btn:hover,
+.login-card button.google:hover,
+.login-card .google:hover,
+.login-card .google-btn:hover,
+.signup-card button.google:hover,
+.signup-card .google:hover,
+.signup-card .google-btn:hover {
+  transform: translateY(-3px) !important;
+  background:
+    radial-gradient(circle at 88% 5%, rgba(212, 175, 55, 0.18), transparent 34%),
+    linear-gradient(135deg, #004aad, #001f4d) !important;
+  color: #ffffff !important;
+  border-color: rgba(212, 175, 55, 0.48) !important;
+  box-shadow:
+    0 24px 52px rgba(0, 31, 77, 0.20),
+    0 0 42px rgba(212, 175, 55, 0.14) !important;
+}
+
+.auth-card a,
+.login-card a,
+.signup-card a,
+.forgot-card a,
+.forgot-password-card a {
+  position: relative;
+  z-index: 4;
+  color: #004aad !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+
+.auth-card a:hover,
+.login-card a:hover,
+.signup-card a:hover,
+.forgot-card a:hover,
+.forgot-password-card a:hover {
+  color: #b8860b !important;
+}
+
+.eye-btn {
+  background: linear-gradient(135deg, rgba(0, 74, 173, 0.10), rgba(212, 175, 55, 0.14)) !important;
+  color: #001f4d !important;
+  border: 1px solid rgba(212, 175, 55, 0.22) !important;
+  /* auth inputs use z-index 4; the eye must sit above its input or clicks never reach it */
+  z-index: 6 !important;
+  cursor: pointer;
+}
+
+.eye-btn:hover,
+.eye-btn:focus-visible {
+  background: linear-gradient(135deg, rgba(0, 74, 173, 0.18), rgba(212, 175, 55, 0.28)) !important;
+}
+
+@media (max-width: 560px) {
+  .auth-page,
+  .login-page,
+  .signup-page,
+  .forgot-page,
+  .forgot-password-page {
+    padding: 14px !important;
+    background:
+      radial-gradient(circle at 10% 10%, rgba(212, 175, 55, 0.18), transparent 30%),
+      linear-gradient(135deg, #061634 0%, #001f4d 36%, #f6f8ff 36.4%, #ffffff 100%) !important;
+  }
+
+  .auth-card,
+  .login-card,
+  .signup-card,
+  .forgot-card,
+  .forgot-password-card {
+    max-width: 100% !important;
+    padding: 28px 20px 24px !important;
+    border-radius: 28px !important;
+  }
+
+  .auth-card h1,
+  .login-card h1,
+  .signup-card h1,
+  .forgot-card h1,
+  .forgot-password-card h1 {
+    font-size: 24px !important;
+  }
+
+  .phone-row {
+    grid-template-columns: 1fr !important;
+  }
+}

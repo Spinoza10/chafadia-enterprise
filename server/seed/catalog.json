@@ -1,0 +1,2034 @@
+[
+  {
+    "slug": "dress-1",
+    "name": "Elegant Modest Dress 1",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 13000,
+    "stock": 8,
+    "description": "Elegant modest dress for classy occasions. Single price: 13,000 FCFA. Bridesmaids or multiple-girls order: 10,000 FCFA each.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Bulk Price",
+    "options": [
+      "Single Dress - 13,000 FCFA",
+      "Bridesmaids / Multiple Girls - 10,000 FCFA each",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress.jpg",
+      "asset:dress0.jpg",
+      "asset:dress1.jpg"
+    ],
+    "sku": "CHF-PROD-1"
+  },
+  {
+    "slug": "dress-2",
+    "name": "Elegant Modest Dress 2",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 12000,
+    "stock": 9,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "New Arrival",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress0.jpg",
+      "asset:dress1.jpg",
+      "asset:dress2.jpg"
+    ],
+    "sku": "CHF-PROD-2"
+  },
+  {
+    "slug": "dress-3",
+    "name": "Elegant Modest Dress 3",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 25000,
+    "stock": 10,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "New Arrival",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress1.jpg",
+      "asset:dress2.jpg",
+      "asset:dress3.jpg"
+    ],
+    "sku": "CHF-PROD-3"
+  },
+  {
+    "slug": "dress-4",
+    "name": "Elegant Modest Dress 4",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 15000,
+    "stock": 11,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "New Arrival",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress2.jpg",
+      "asset:dress3.jpg",
+      "asset:dress4.jpg"
+    ],
+    "sku": "CHF-PROD-4"
+  },
+  {
+    "slug": "dress-5",
+    "name": "Elegant Modest Dress 5",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 17000,
+    "stock": 12,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "New Arrival",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress3.jpg",
+      "asset:dress4.jpg",
+      "asset:dress5.jpg"
+    ],
+    "sku": "CHF-PROD-5"
+  },
+  {
+    "slug": "dress-6",
+    "name": "Elegant Modest Dress 6",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 20000,
+    "stock": 13,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "New Arrival",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress4.jpg",
+      "asset:dress5.jpg",
+      "asset:dress6.jpg"
+    ],
+    "sku": "CHF-PROD-6"
+  },
+  {
+    "slug": "dress-7",
+    "name": "Elegant Modest Dress 7",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 18000,
+    "stock": 14,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress5.jpg",
+      "asset:dress6.jpg",
+      "asset:dress7.jpg"
+    ],
+    "sku": "CHF-PROD-7"
+  },
+  {
+    "slug": "dress-8",
+    "name": "Elegant Modest Dress 8",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 30000,
+    "stock": 8,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress6.jpg",
+      "asset:dress7.jpg",
+      "asset:dress8.jpg"
+    ],
+    "sku": "CHF-PROD-8"
+  },
+  {
+    "slug": "dress-9",
+    "name": "Elegant Modest Dress 9",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 14000,
+    "stock": 9,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress7.jpg",
+      "asset:dress8.jpg",
+      "asset:dress9.jpg"
+    ],
+    "sku": "CHF-PROD-9"
+  },
+  {
+    "slug": "dress-10",
+    "name": "Elegant Modest Dress 10",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 18000,
+    "stock": 10,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress8.jpg",
+      "asset:dress9.jpg",
+      "asset:dress10.jpg"
+    ],
+    "sku": "CHF-PROD-10"
+  },
+  {
+    "slug": "dress-11",
+    "name": "Elegant Modest Dress 11",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 50000,
+    "stock": 11,
+    "description": "Premium modest dress package. Price: 50,000 FCFA for the two dresses shown together.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Two Dresses",
+    "options": [
+      "Two Dresses Set - 50,000 FCFA",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress9.jpg",
+      "asset:dress10.jpg",
+      "asset:dress11.jpg"
+    ],
+    "sku": "CHF-PROD-11"
+  },
+  {
+    "slug": "dress-12",
+    "name": "Elegant Modest Dress 12",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 10000,
+    "stock": 12,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress10.jpg",
+      "asset:dress11.jpg",
+      "asset:dress12.jpg"
+    ],
+    "sku": "CHF-PROD-12"
+  },
+  {
+    "slug": "dress-13",
+    "name": "Elegant Modest Dress 13",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 16000,
+    "stock": 13,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress11.jpg",
+      "asset:dress12.jpg",
+      "asset:dress13.jpg"
+    ],
+    "sku": "CHF-PROD-13"
+  },
+  {
+    "slug": "dress-14",
+    "name": "Elegant Modest Dress 14",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 25000,
+    "stock": 14,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress12.jpg",
+      "asset:dress13.jpg",
+      "asset:dress14.jpg"
+    ],
+    "sku": "CHF-PROD-14"
+  },
+  {
+    "slug": "dress-15",
+    "name": "Elegant Modest Dress 15",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 21000,
+    "stock": 8,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress13.jpg",
+      "asset:dress14.jpg",
+      "asset:dress15.jpg"
+    ],
+    "sku": "CHF-PROD-15"
+  },
+  {
+    "slug": "dress-16",
+    "name": "Elegant Modest Dress 16",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 15000,
+    "stock": 9,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress14.jpg",
+      "asset:dress15.jpg",
+      "asset:dress16.jpg"
+    ],
+    "sku": "CHF-PROD-16"
+  },
+  {
+    "slug": "dress-17",
+    "name": "Elegant Modest Dress 17",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 17000,
+    "stock": 10,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress15.jpg",
+      "asset:dress16.jpg",
+      "asset:dress17.jpg"
+    ],
+    "sku": "CHF-PROD-17"
+  },
+  {
+    "slug": "dress-18",
+    "name": "Elegant Modest Dress 18",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 18000,
+    "stock": 11,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress16.jpg",
+      "asset:dress17.jpg",
+      "asset:dress18.jpg"
+    ],
+    "sku": "CHF-PROD-18"
+  },
+  {
+    "slug": "dress-19",
+    "name": "Elegant Modest Dress 19",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 15000,
+    "stock": 12,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress17.jpg",
+      "asset:dress18.jpg",
+      "asset:dress19.jpg"
+    ],
+    "sku": "CHF-PROD-19"
+  },
+  {
+    "slug": "dress-20",
+    "name": "Elegant Modest Dress 20",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 16000,
+    "stock": 13,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress18.jpg",
+      "asset:dress19.jpg",
+      "asset:dress20.jpg"
+    ],
+    "sku": "CHF-PROD-20"
+  },
+  {
+    "slug": "dress-21",
+    "name": "Elegant Modest Dress 21",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 19000,
+    "stock": 14,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress19.jpg",
+      "asset:dress20.jpg",
+      "asset:dress21.jpg"
+    ],
+    "sku": "CHF-PROD-21"
+  },
+  {
+    "slug": "dress-22",
+    "name": "Elegant Modest Dress 22",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 23000,
+    "stock": 8,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress20.jpg",
+      "asset:dress21.jpg",
+      "asset:dress.jpg"
+    ],
+    "sku": "CHF-PROD-22"
+  },
+  {
+    "slug": "dress-23",
+    "name": "Elegant Modest Dress 23",
+    "category": "Feminine Secrets",
+    "collection": "Elegant Dresses",
+    "price": 15000,
+    "stock": 9,
+    "description": "Elegant modest dress selected for beauty, comfort, confidence and premium feminine style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "asset:dress21.jpg",
+      "asset:dress.jpg",
+      "asset:dress0.jpg"
+    ],
+    "sku": "CHF-PROD-23"
+  },
+  {
+    "slug": "handbag-1",
+    "name": "Premium Hand Bag 1",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 11500,
+    "stock": 7,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag1.jpg",
+      "asset:hand-bag2.jpg",
+      "asset:hand-bag3.jpg"
+    ],
+    "sku": "CHF-PROD-1"
+  },
+  {
+    "slug": "handbag-2",
+    "name": "Premium Hand Bag 2",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 10000,
+    "stock": 8,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag2.jpg",
+      "asset:hand-bag3.jpg",
+      "asset:hand-bag4.jpg"
+    ],
+    "sku": "CHF-PROD-2"
+  },
+  {
+    "slug": "handbag-3",
+    "name": "Premium Hand Bag 3",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 6000,
+    "stock": 9,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag3.jpg",
+      "asset:hand-bag4.jpg",
+      "asset:hand-bag5.jpg"
+    ],
+    "sku": "CHF-PROD-3"
+  },
+  {
+    "slug": "handbag-4",
+    "name": "Premium Hand Bag 4",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 7500,
+    "stock": 10,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag4.jpg",
+      "asset:hand-bag5.jpg",
+      "asset:hand-bag6.jpg"
+    ],
+    "sku": "CHF-PROD-4"
+  },
+  {
+    "slug": "handbag-5",
+    "name": "Premium Hand Bag 5",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 5000,
+    "stock": 11,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag5.jpg",
+      "asset:hand-bag6.jpg",
+      "asset:hand-bag7.jpg"
+    ],
+    "sku": "CHF-PROD-5"
+  },
+  {
+    "slug": "handbag-6",
+    "name": "Premium Hand Bag 6",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 9500,
+    "stock": 7,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag6.jpg",
+      "asset:hand-bag7.jpg",
+      "asset:hand-bag8.jpg"
+    ],
+    "sku": "CHF-PROD-6"
+  },
+  {
+    "slug": "handbag-7",
+    "name": "Premium Hand Bag 7",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 8000,
+    "stock": 8,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag7.jpg",
+      "asset:hand-bag8.jpg",
+      "asset:hand-bag9.jpg"
+    ],
+    "sku": "CHF-PROD-7"
+  },
+  {
+    "slug": "handbag-8",
+    "name": "Premium Hand Bag 8",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 7500,
+    "stock": 9,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag8.jpg",
+      "asset:hand-bag9.jpg",
+      "asset:hand-bag10.jpg"
+    ],
+    "sku": "CHF-PROD-8"
+  },
+  {
+    "slug": "handbag-9",
+    "name": "Premium Hand Bag 9",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 10000,
+    "stock": 10,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag9.jpg",
+      "asset:hand-bag10.jpg",
+      "asset:hand-bag11.jpg"
+    ],
+    "sku": "CHF-PROD-9"
+  },
+  {
+    "slug": "handbag-10",
+    "name": "Premium Hand Bag 10",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 8500,
+    "stock": 11,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag10.jpg",
+      "asset:hand-bag11.jpg",
+      "asset:hand-bag12.jpg"
+    ],
+    "sku": "CHF-PROD-10"
+  },
+  {
+    "slug": "handbag-11",
+    "name": "Premium Hand Bag 11",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 9000,
+    "stock": 7,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag11.jpg",
+      "asset:hand-bag12.jpg",
+      "asset:hand-bag1.jpg"
+    ],
+    "sku": "CHF-PROD-11"
+  },
+  {
+    "slug": "handbag-12",
+    "name": "Premium Hand Bag 12",
+    "category": "Feminine Secrets",
+    "collection": "Hand Bags",
+    "price": 9500,
+    "stock": 8,
+    "description": "Beautiful handbag for elegant women, daily use, events, gifting and professional style.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Luxury Bag",
+    "options": [
+      "Classic",
+      "Luxury",
+      "Gift Pack"
+    ],
+    "images": [
+      "asset:hand-bag12.jpg",
+      "asset:hand-bag1.jpg",
+      "asset:hand-bag2.jpg"
+    ],
+    "sku": "CHF-PROD-12"
+  },
+  {
+    "slug": "shoes-1",
+    "name": "Elegant Footwear 1",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 8500,
+    "stock": 7,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes.jpg",
+      "asset:shoes0.jpg",
+      "asset:shoes2.jpg"
+    ],
+    "sku": "CHF-PROD-1"
+  },
+  {
+    "slug": "shoes-2",
+    "name": "Elegant Footwear 2",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 9000,
+    "stock": 8,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes0.jpg",
+      "asset:shoes2.jpg",
+      "asset:shoes3.jpg"
+    ],
+    "sku": "CHF-PROD-2"
+  },
+  {
+    "slug": "shoes-3",
+    "name": "Elegant Footwear 3",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 9500,
+    "stock": 9,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes2.jpg",
+      "asset:shoes3.jpg",
+      "asset:shoes4.jpg"
+    ],
+    "sku": "CHF-PROD-3"
+  },
+  {
+    "slug": "shoes-4",
+    "name": "Elegant Footwear 4",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 10000,
+    "stock": 10,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes3.jpg",
+      "asset:shoes4.jpg",
+      "asset:shoes5.jpg"
+    ],
+    "sku": "CHF-PROD-4"
+  },
+  {
+    "slug": "shoes-5",
+    "name": "Elegant Footwear 5",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 10500,
+    "stock": 11,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes4.jpg",
+      "asset:shoes5.jpg",
+      "asset:shoes6.jpg"
+    ],
+    "sku": "CHF-PROD-5"
+  },
+  {
+    "slug": "shoes-6",
+    "name": "Elegant Footwear 6",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 11000,
+    "stock": 12,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes5.jpg",
+      "asset:shoes6.jpg",
+      "asset:shoes7.jpg"
+    ],
+    "sku": "CHF-PROD-6"
+  },
+  {
+    "slug": "shoes-7",
+    "name": "Elegant Footwear 7",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 9000,
+    "stock": 7,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes6.jpg",
+      "asset:shoes7.jpg",
+      "asset:shoes8.jpg"
+    ],
+    "sku": "CHF-PROD-7"
+  },
+  {
+    "slug": "shoes-8",
+    "name": "Elegant Footwear 8",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 9500,
+    "stock": 8,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes7.jpg",
+      "asset:shoes8.jpg",
+      "asset:shoes9.jpg"
+    ],
+    "sku": "CHF-PROD-8"
+  },
+  {
+    "slug": "shoes-9",
+    "name": "Elegant Footwear 9",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 10000,
+    "stock": 9,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes8.jpg",
+      "asset:shoes9.jpg",
+      "asset:shoes10.jpg"
+    ],
+    "sku": "CHF-PROD-9"
+  },
+  {
+    "slug": "shoes-10",
+    "name": "Elegant Footwear 10",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 11000,
+    "stock": 10,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes9.jpg",
+      "asset:shoes10.jpg",
+      "asset:shoes11.jpg"
+    ],
+    "sku": "CHF-PROD-10"
+  },
+  {
+    "slug": "shoes-11",
+    "name": "Elegant Footwear 11",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 11500,
+    "stock": 11,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes10.jpg",
+      "asset:shoes11.jpg",
+      "asset:shoes12.jpg"
+    ],
+    "sku": "CHF-PROD-11"
+  },
+  {
+    "slug": "shoes-12",
+    "name": "Elegant Footwear 12",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 12000,
+    "stock": 12,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes11.jpg",
+      "asset:shoes12.jpg",
+      "asset:shoes13.jpg"
+    ],
+    "sku": "CHF-PROD-12"
+  },
+  {
+    "slug": "shoes-13",
+    "name": "Elegant Footwear 13",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 10000,
+    "stock": 7,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes12.jpg",
+      "asset:shoes13.jpg",
+      "asset:shoes14.jpg"
+    ],
+    "sku": "CHF-PROD-13"
+  },
+  {
+    "slug": "shoes-14",
+    "name": "Elegant Footwear 14",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 10500,
+    "stock": 8,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes13.jpg",
+      "asset:shoes14.jpg",
+      "asset:shoes15.jpg"
+    ],
+    "sku": "CHF-PROD-14"
+  },
+  {
+    "slug": "shoes-15",
+    "name": "Elegant Footwear 15",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 11000,
+    "stock": 9,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes14.jpg",
+      "asset:shoes15.jpg",
+      "asset:shoes16.jpg"
+    ],
+    "sku": "CHF-PROD-15"
+  },
+  {
+    "slug": "shoes-16",
+    "name": "Elegant Footwear 16",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 12000,
+    "stock": 10,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes15.jpg",
+      "asset:shoes16.jpg",
+      "asset:shoes.jpg"
+    ],
+    "sku": "CHF-PROD-16"
+  },
+  {
+    "slug": "shoes-17",
+    "name": "Elegant Footwear 17",
+    "category": "Feminine Secrets",
+    "collection": "Shoes & Footwear",
+    "price": 13000,
+    "stock": 11,
+    "description": "Elegant footwear for classy outfits, occasions, office wear and everyday confidence.",
+    "featured": false,
+    "discount": 0,
+    "badge": "Classy Footwear",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "images": [
+      "asset:shoes16.jpg",
+      "asset:shoes.jpg",
+      "asset:shoes0.jpg"
+    ],
+    "sku": "CHF-PROD-17"
+  },
+  {
+    "slug": "jewelry-1",
+    "name": "Premium Jewelry Set 1",
+    "category": "Feminine Secrets",
+    "collection": "Jewelry",
+    "price": 5000,
+    "stock": 10,
+    "description": "Premium jewelry accessory for elegant dressing, gifts and special occasions.",
+    "featured": true,
+    "discount": 5,
+    "badge": "Luxury Jewelry",
+    "options": [
+      "Gold Tone",
+      "Silver Tone"
+    ],
+    "images": [
+      "asset:jewelry1.jpg",
+      "asset:jewelry2.jpg",
+      "asset:jewelry3.jpg",
+      "asset:jewelry4.jpg"
+    ],
+    "sku": "CHF-PROD-1"
+  },
+  {
+    "slug": "jewelry-2",
+    "name": "Premium Jewelry Set 2",
+    "category": "Feminine Secrets",
+    "collection": "Jewelry",
+    "price": 5500,
+    "stock": 10,
+    "description": "Beautiful jewelry piece designed to complete your modest and elegant outfit.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Gift Choice",
+    "options": [
+      "Classic",
+      "Luxury"
+    ],
+    "images": [
+      "asset:jewelry2.jpg",
+      "asset:jewelry3.jpg",
+      "asset:jewelry4.jpg"
+    ],
+    "sku": "CHF-PROD-2"
+  },
+  {
+    "slug": "jewelry-3",
+    "name": "Premium Jewelry Set 3",
+    "category": "Feminine Secrets",
+    "collection": "Jewelry",
+    "price": 6000,
+    "stock": 10,
+    "description": "Classy jewelry for women who love elegance, beauty and premium finishing.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Elegant",
+    "options": [
+      "Classic",
+      "Luxury"
+    ],
+    "images": [
+      "asset:jewelry3.jpg",
+      "asset:jewelry4.jpg",
+      "asset:jewelry1.jpg"
+    ],
+    "sku": "CHF-PROD-3"
+  },
+  {
+    "slug": "jewelry-4",
+    "name": "Premium Jewelry Set 4",
+    "category": "Feminine Secrets",
+    "collection": "Jewelry",
+    "price": 6500,
+    "stock": 8,
+    "description": "Elegant jewelry accessory suitable for parties, daily elegance and gifting.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Premium",
+    "options": [
+      "Classic",
+      "Luxury"
+    ],
+    "images": [
+      "asset:jewelry4.jpg",
+      "asset:jewelry1.jpg",
+      "asset:jewelry2.jpg"
+    ],
+    "sku": "CHF-PROD-4"
+  },
+  {
+    "slug": "lip-gloss",
+    "name": "Premium Lip Gloss",
+    "category": "Feminine Secrets",
+    "collection": "Beauty Care",
+    "price": 2000,
+    "stock": 25,
+    "description": "Beautiful lip gloss for a soft, elegant and confident feminine finish.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Beauty Care",
+    "options": [
+      "Clear",
+      "Soft Pink",
+      "Nude"
+    ],
+    "images": [
+      "asset:lip-glose.jpg"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "banana-chips",
+    "name": "Banana Chips",
+    "category": "Crips Co.",
+    "collection": "Non Spicy Chips",
+    "price": 500,
+    "stock": 40,
+    "description": "Crispy banana chips with front and back packaging, perfect for family snacks and resale.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Crunchy",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:banana-chips1.png",
+      "asset:banana-chips2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "spicy-banana-chips",
+    "name": "Spicy Banana Chips",
+    "category": "Crips Co.",
+    "collection": "Spicy Chips",
+    "price": 500,
+    "stock": 35,
+    "description": "Crunchy spicy banana chips with delicious seasoning and beautiful packaging.",
+    "featured": true,
+    "discount": 5,
+    "badge": "Spicy",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:banana-spicy1.png",
+      "asset:banana-spicy2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "beef-chips",
+    "name": "Beef Chips",
+    "category": "Crips Co.",
+    "collection": "Meat Chips",
+    "price": 500,
+    "stock": 28,
+    "description": "Non-spicy beef chips made for premium snacking, protein lovers and special treats.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Protein Snack",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:beef-chips1.png",
+      "asset:beef-chips2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "spicy-beef-chips",
+    "name": "Spicy Beef Chips",
+    "category": "Crips Co.",
+    "collection": "Meat Chips",
+    "price": 500,
+    "stock": 20,
+    "description": "Spicy beef chips with rich flavor for customers who love crunchy hot snacks.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Spicy Meat",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:beef-spicy 1.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "chicken-chips",
+    "name": "Chicken Chips",
+    "category": "Crips Co.",
+    "collection": "Meat Chips",
+    "price": 500,
+    "stock": 30,
+    "description": "Non-spicy chicken chips with front and back packaging for premium snacking.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Chicken Snack",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:chicken-chips1.png",
+      "asset:chicken-chips2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "spicy-chicken-chips",
+    "name": "Spicy Chicken Chips",
+    "category": "Crips Co.",
+    "collection": "Meat Chips",
+    "price": 500,
+    "stock": 26,
+    "description": "Spicy chicken chips with beautiful front and back packaging for crunchy enjoyment.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Hot Seller",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:chicken-spicy1.png",
+      "asset:chicken-spicy2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "potato-chips",
+    "name": "Potato Chips",
+    "category": "Crips Co.",
+    "collection": "Potato Chips",
+    "price": 500,
+    "stock": 45,
+    "description": "Crispy potato chips for daily snacks, school packs, family treats and occasions.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Family Snack",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:potato-chips1.png",
+      "asset:potato-chips2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "spicy-potato-chips",
+    "name": "Spicy Potato Chips",
+    "category": "Crips Co.",
+    "collection": "Potato Chips",
+    "price": 500,
+    "stock": 38,
+    "description": "Spicy potato chips with crunchy texture and a delicious premium taste.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Spicy",
+    "options": [
+      "Small Pack",
+      "Family Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:potato-spicy1.png",
+      "asset:potato-spicy2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "chips-occasion-pack",
+    "name": "Chafadia Chips Occasion Pack",
+    "category": "Crips Co.",
+    "collection": "Occasion Packs",
+    "price": 5000,
+    "stock": 20,
+    "description": "Chafadia Enterprise chips package for occasions, schools, events, family gatherings and resale.",
+    "featured": true,
+    "discount": 10,
+    "badge": "Event Pack",
+    "options": [
+      "Event Pack",
+      "Wholesale Pack",
+      "Custom Pack"
+    ],
+    "images": [
+      "asset:chips.png",
+      "asset:banana-chips1.png",
+      "asset:potato-chips1.png",
+      "asset:chicken-chips1.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "red-vinegar",
+    "name": "Red Vinegar",
+    "category": "Cleaning & Hygiene",
+    "collection": "Food Essentials",
+    "price": 1500,
+    "stock": 25,
+    "description": "Quality vinegar for food essentials, household use and Chafadia premium care.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Food Essential",
+    "options": [
+      "500ml",
+      "1L",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:red-vinegar.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "tile-wash",
+    "name": "Tile Wash",
+    "category": "Cleaning & Hygiene",
+    "collection": "Home Cleaning",
+    "price": 2500,
+    "stock": 35,
+    "description": "Powerful tile wash for clean, fresh and beautiful home surfaces.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Home Care",
+    "options": [
+      "500ml",
+      "1L",
+      "5L"
+    ],
+    "images": [
+      "asset:tile-wash1.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "white-vinegar",
+    "name": "White Vinegar",
+    "category": "Cleaning & Hygiene",
+    "collection": "Food Essentials",
+    "price": 1500,
+    "stock": 25,
+    "description": "Versatile vinegar for food, home cleaning and daily household essentials.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Essential",
+    "options": [
+      "500ml",
+      "1L",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:vinegar2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "bath-gel",
+    "name": "Bath Gel",
+    "category": "Cleaning & Hygiene",
+    "collection": "Body Care",
+    "price": 2500,
+    "stock": 30,
+    "description": "Refreshing bath gel for everyday clean, smooth and pleasant body care.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Body Care",
+    "options": [
+      "500ml",
+      "1L",
+      "Family Size"
+    ],
+    "images": [
+      "asset:bath-jel.png",
+      "asset:bath-jel1.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "bicarbonate",
+    "name": "Bicarbonate",
+    "category": "Cleaning & Hygiene",
+    "collection": "Home Essentials",
+    "price": 1200,
+    "stock": 40,
+    "description": "Bicarbonate for food essentials, hygiene, home care and practical daily uses.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Multi-purpose",
+    "options": [
+      "Small Pack",
+      "Large Pack",
+      "Wholesale"
+    ],
+    "images": [
+      "asset:bicarbonate1.png",
+      "asset:bicarbonate2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "eau-de-javel",
+    "name": "Eau de Javel",
+    "category": "Cleaning & Hygiene",
+    "collection": "Home Cleaning",
+    "price": 1500,
+    "stock": 45,
+    "description": "Eau de javel for hygiene, cleaning, laundry and household disinfection.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Hygiene",
+    "options": [
+      "500ml",
+      "1L",
+      "5L"
+    ],
+    "images": [
+      "asset:eau-dejavel.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "glycerine",
+    "name": "Glycerine",
+    "category": "Cleaning & Hygiene",
+    "collection": "Body Care",
+    "price": 2000,
+    "stock": 30,
+    "description": "Quality glycerine for body care, softness and everyday beauty essentials.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Skin Care",
+    "options": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "images": [
+      "asset:glycerine1.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "family-skincare",
+    "name": "Family Skincare Pack",
+    "category": "Cleaning & Hygiene",
+    "collection": "Family Care",
+    "price": 6500,
+    "stock": 20,
+    "description": "Family skincare essentials for clean, smooth and well-cared-for skin.",
+    "featured": true,
+    "discount": 7,
+    "badge": "Family Care",
+    "options": [
+      "Starter Pack",
+      "Family Pack"
+    ],
+    "images": [
+      "asset:family-skincare.png",
+      "asset:family-skincare2.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "feminine-care-pack",
+    "name": "Feminine Secrets Care Pack",
+    "category": "Cleaning & Hygiene",
+    "collection": "Women Essentials",
+    "price": 7500,
+    "stock": 18,
+    "description": "Women essential care pack crafted for feminine confidence, hygiene and elegance.",
+    "featured": true,
+    "discount": 8,
+    "badge": "Women Care",
+    "options": [
+      "Classic Pack",
+      "Premium Pack"
+    ],
+    "images": [
+      "asset:femine-secrets.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "dishes-savon",
+    "name": "Dishes Savon",
+    "category": "Cleaning & Hygiene",
+    "collection": "Dish Care",
+    "price": 1500,
+    "stock": 50,
+    "description": "Dish soap for plates, kitchen utensils and everyday household cleaning.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Kitchen Care",
+    "options": [
+      "500ml",
+      "1L",
+      "5L"
+    ],
+    "images": [
+      "asset:dishes-savon.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "liquid-soap",
+    "name": "Liquid Soap",
+    "category": "Cleaning & Hygiene",
+    "collection": "Home Hygiene",
+    "price": 1800,
+    "stock": 50,
+    "description": "Liquid soap for handwashing, hygiene and premium family cleanliness.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Hygiene",
+    "options": [
+      "500ml",
+      "1L",
+      "5L"
+    ],
+    "images": [
+      "asset:liquid-soap.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "baobab-drink",
+    "name": "Baobab Drink",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1500,
+    "stock": 35,
+    "description": "Creamy baobab halal drink, refreshing and naturally satisfying.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Natural Drink",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:boabab.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "carrot-beetroot-drink",
+    "name": "Carrot & Beetroot Drink",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1500,
+    "stock": 35,
+    "description": "Healthy carrot and beetroot drink for natural refreshment and wellness.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Healthy",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:carrot-beetroot.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "carrot-juice",
+    "name": "Carrot Juice",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1500,
+    "stock": 35,
+    "description": "Fresh carrot juice prepared for halal refreshment and family enjoyment.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Fresh",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:carrot-juice.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "cocktail-drink",
+    "name": "Cocktail Drink",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1800,
+    "stock": 30,
+    "description": "Delicious cocktail drink blended for occasions, family events and daily refreshment.",
+    "featured": true,
+    "discount": 5,
+    "badge": "Event Drink",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:cocktail-drink.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "mango-juice",
+    "name": "Mango Juice",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1500,
+    "stock": 40,
+    "description": "Sweet mango juice with premium flavor for family refreshment.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Fresh Juice",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:mango-juice.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "orange-juice",
+    "name": "Orange Juice",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1500,
+    "stock": 40,
+    "description": "Fresh orange juice prepared for healthy halal refreshment.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Fresh Juice",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:orange-juice.png",
+      "asset:mango-juice.png",
+      "asset:cocktail-drink.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "pineapple-ginger",
+    "name": "Pineapple & Ginger Drink",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1800,
+    "stock": 30,
+    "description": "Pineapple and ginger drink with refreshing natural taste.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Refreshing",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:pineaple-ginger.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "pineapple-cucumber",
+    "name": "Pineapple & Cucumber Drink",
+    "category": "Halal Drinks",
+    "collection": "Natural Drinks",
+    "price": 1800,
+    "stock": 30,
+    "description": "Refreshing pineapple and cucumber drink for halal wellness and hydration.",
+    "featured": true,
+    "discount": 0,
+    "badge": "Hydrating",
+    "options": [
+      "Small",
+      "Medium",
+      "Event Pack"
+    ],
+    "images": [
+      "asset:pineaple-cucumber.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  },
+  {
+    "slug": "occasion-pallets",
+    "name": "Occasion Pallets & Bulk Orders",
+    "category": "Wholesale & Occasions",
+    "collection": "Event Supply",
+    "price": 25000,
+    "stock": 20,
+    "description": "We offer pallets, bulk supply and occasion packages for weddings, parties, schools, businesses and special events. Nationwide and worldwide delivery available.",
+    "featured": true,
+    "discount": 12,
+    "badge": "Bulk Supply",
+    "options": [
+      "Small Occasion",
+      "Large Occasion",
+      "Wholesale",
+      "Worldwide"
+    ],
+    "images": [
+      "asset:pallets1.png",
+      "asset:pallets2.png",
+      "asset:chips.png",
+      "asset:cocktail-drink.png"
+    ],
+    "sku": "CHF-PROD-87111"
+  }
+]
