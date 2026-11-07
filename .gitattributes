@@ -1,0 +1,13 @@
+# Same line endings for everyone (Windows, Mac, Linux): text files are stored with LF.
+* text=auto eol=lf
+
+# Binary files: never convert
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,3 @@
+# The owner reviews every change. With branch protection ("Require review from Code Owners"),
+# nothing reaches main without this approval.
+* @Spinoza10
